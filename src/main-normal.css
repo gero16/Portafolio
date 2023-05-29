@@ -1,0 +1,160 @@
+
+h1 {
+    font-size: 7vw;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+span {
+    color: #C6D6F5;
+}
+
+
+
+.main-titulo {
+ margin-top: 12%;
+}
+
+.section-trabajos {
+    margin-top: 20px;
+    position: relative;
+    bottom: -220px;
+}
+
+.div-trabajos {
+    gap: 40px;
+    margin: 20px 0px 60px 0px;
+}
+.section-tecnologias-conocidas {
+    position: relative;
+    bottom: -220px;
+}
+
+.section-tecnologias-aprender {
+    margin-top: 20px;
+    position: relative;
+    bottom: -250px;
+    background:#0a192f;
+    padding: 10px;
+}
+
+footer {
+    position: relative;
+    bottom: -250px;
+    height: 50px;
+}
+
+.titulo-publicacion-trabajo {
+    margin-bottom: 10px;
+}
+.img-post {
+    width: 250px;
+    margin-bottom: 5px;
+}
+
+
+
+article {
+    padding: 10px;
+    background-color: rgb(48, 46, 46, 0.5);
+    width: 270px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+.text-titulo {
+    width: 500px;
+    
+}
+
+.seccion-tecnologias  {
+    background-color: white;
+    width: 100%;
+}
+
+.seccion-tecnologias img {
+    width: 120px;
+}
+
+.titulo-tecnologias-conocidas {
+    color:#0A192F;
+    font-size: x-large;
+    margin-bottom: 15px;
+  
+}
+
+.img-triada {
+    width: 330px !important;
+}
+
+.github {
+    width: 130px !important;
+}
+.git{
+    margin-top: 10px;
+ height: 110px;
+ width: 110px !important;
+}
+
+.node {
+    width: 160px !important;
+}
+.teconologias-aprender {
+    background-color: #0A192F;
+}
+
+.teconologias-aprender {
+ margin: 20px 0px;;
+}
+
+.docker {
+    width: 300px;
+    margin-top: 10px;
+}
+.typescript {
+    width: 180px;
+    margin-top: 10px;
+}
+
+.titulo-tecnologias-aprender {
+    font-size: x-large;
+    margin-bottom: 15px;
+    height: 250px;
+}
+
+/*** FORMULARIO CONTACTO ***/
+
+.formulario-contacto {
+    color: white;
+
+}
+.lista-contacto {
+    margin-top: 15px;
+}
+.lista-contacto li {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 6fr;
+    margin-bottom: 15px;
+    width: 75%;
+    font-size: medium;
+    
+}
+
+.lista-contacto input{
+    padding: 6px;
+    font-size: medium;
+}
+
+.div-btn-contacto {
+    display: flex;
+    justify-content:end;
+}
+.btn-contacto {
+    padding: 10px;
+    font-size: large;
+
+}

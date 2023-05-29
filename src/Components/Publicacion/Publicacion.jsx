@@ -7,7 +7,7 @@ const Publicacion = ({titulo, img, contenido}) => {
                 <img className="img-post" src={img} alt="" />
             </div>
             <div>
-                <span> {contenido} </span>
+                <span className="contenido-proyecto"> {contenido} </span>
             </div>
       </article>
     )

@@ -19,6 +19,7 @@ const App = ()=> {
     <div className="App">
 
       <div className='container'>
+
         <main className="main-titulo">
           <Fade cascade >
             <h1> Gerónimo Nicola </h1>
@@ -28,20 +29,15 @@ const App = ()=> {
             Soy un Full Stack Web Developer especializado en Javascript
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi temporibus adipisci quidem nulla amet fugit, 
             at odit modi voluptatum distinctio, sequi sapiente atque autem labore rem! Quibusdam, omnis. Quos, velit.
-            </p>
+          </p>
           </Fade>
+         
+          
         </main>
 
-        <section className="section-about">
-          <h2> Sobre mí </h2>
-          <p className="texto-about">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quod natus ipsam molestiae dicta sapiente necessitatibus et nam error doloremque quisquam, adipisci fugit consequuntur officiis, laboriosam excepturi dolores reprehenderit nihil.
-          </p>
-        </section>
-
         <section className="section-trabajos">
-            <h3> Algunos de mis Proyectos </h3>
-            <div className="div-trabajos">
+            <h3> Algunos de mis Trabajos </h3>
+            <div className="flex div-trabajos">
               <Publicacion 
                 titulo={"Tienda Virtual - Poryecto final, Coderhouse"} 
                 img="https://camo.githubusercontent.com/eb0081f7f57d4f3c29ca21687b46162bbe9c0b2df501241820c04bb304be5521/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6765726f6e69636f6c612f696d6167652f75706c6f61642f76313637363531363335312f676f767135796c726c66667179646432633468762e6a7067"
@@ -61,31 +57,26 @@ const App = ()=> {
               />
           </div>
         </section>
+
       </div>
 
-
+     
       
-      
-
       <section className="section-tecnologias-conocidas">
-          <article className="section-tecnologias ">
+          <article className="seccion-tecnologias ">
           <h3 className="flex-center titulo-tecnologias-conocidas"> Teconologias Conocidas</h3>
 
             <section className="flex-center">
               <img src={Triada} alt=""  className="img-triada"/>
+              <img src={Git} alt="" className="git"/>
             </section>
 
             <section className="flex-center">
               <img src={GitHub} alt=""  className="github"/>
               <img src={Vite} alt="" />
               <img src={Mongo} alt=""  className="mongo"/>
-            </section>
-
-            <section className="flex-center">
               <img src={Postgre} alt="" />
-              <img src={Git} alt="" className="git"/>
             </section>
-
 
             <section className="flex-center">
               <img src={Node} alt="" className="node"/>
@@ -94,10 +85,9 @@ const App = ()=> {
             </section>
             
           </article>
-        </section>
-        
+      </section>
 
-        <section className="section-tecnologias-aprender">
+      <section className="section-tecnologias-aprender">
         <h3 className="flex-center titulo-tecnologias-aprender"> Teconologias por aprender </h3>
         <div className="flex-center">
             <section className="flex-center">
@@ -106,6 +96,11 @@ const App = ()=> {
             </section>
           </div>
       </section>
+
+      <footer>
+          algo
+      </footer>
+
     </div>
   )
 }

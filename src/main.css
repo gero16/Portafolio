@@ -4,25 +4,14 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
+    color: #C6D6F5;
+    box-sizing: border-box;
 }
 body {
     background-color: #0A192F;
 }
 
-h1, h2, h3, h4 {
-    color: #C6D6F5;
-}
-h1 {
-    font-size: 7vw;
-}
 
-h2 {
-    font-size: 5vw;
-}
-
-span {
-    color: #C6D6F5;
-}
 
 ul {
     list-style: none;
@@ -36,8 +25,6 @@ a{
     text-decoration: none;
     color: #d6d8d7;
 }
-
-
 
 .flex {
     display:flex
@@ -54,155 +41,149 @@ a{
     margin: 0 auto;
 }
 
+h2 {
+  font-size: larger;
+}
+
 .lista-navbar {
     display: flex;
     flex-direction: row-reverse;
     gap: 10px;
-    margin: 20px 30px
+    margin: 20px 0px;
+    font-size: smaller;
+    width: 90%;
 }
 
+.section-about {
+    margin: 30px 0px;
+}
+.texto-about {
+    font-size: small;
+    max-width: 250px;
+}
 .main-titulo {
- margin-top: 12%;
+    margin: 15px 0px;
+}
+.text-titulo {
+    font-size: small;
+    max-width: 250px;
+    margin: 10px 0px;
 }
 
+/*** Seccion Proyectos ****/ 
 .section-trabajos {
     margin-top: 20px;
-    position: relative;
-    bottom: -220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-.section-tecnologias-conocidas {
-    position: relative;
-    bottom: -220px;
+.section-trabajos img {
+    width: 100%;
+}
+.div-trabajos {
+    gap: 10px;
+    margin: 20px 0px 60px 0px;
+    width: 90%;
 }
 
-.section-tecnologias-aprender {
-    margin-top: 20px;
-    position: relative;
-    bottom: -250px;
-    background:#0a192f;
-    padding: 10px;
-}
-
-footer {
-    position: relative;
-    bottom: -250px;
-    height: 50px;
+.publicacion-trabajo {
+    margin: 15px 0px;
 }
 
 .titulo-publicacion-trabajo {
+    width: 90%;
+}
+
+
+/*** Seccion Teconologias Conocidas ***/
+.section-tecnologias-conocidas {
     margin-bottom: 10px;
-}
-.img-post {
-    width: 250px;
-    margin-bottom: 5px;
-}
-
-.section-articles {
-    display: flex;
-    gap: 40px;
-    margin: 20px 0px 30px 0px;
-}
-
-article {
-    padding: 10px;
-    background-color: rgb(48, 46, 46, 0.5);
-    width: 270px;
-    border-radius: 5px;
-    padding: 20px;
-}
-
-
-.text-titulo {
-    width: 500px;
-    color: #C6D6F5;
-}
-
-.seccion-tecnologias  {
-    background-color: white;
     width: 100%;
 }
 
-.seccion-tecnologias img {
-    width: 120px;
-}
-
-.titulo-tecnologias-conocidas {
+.section-tecnologias-conocidas h3 {
     color:#0A192F;
-    font-size: x-large;
-    margin-bottom: 15px;
 }
+
+.section-tecnologias  {
+    margin: 10px 0px;
+    background-color: white;
+    padding: 20px 0px;
+    max-height: 600px;
+    width: 100%;
+}
+
+.section-tecnologias img {
+    width: 100px;
+}
+
 .img-triada {
-    width: 330px !important;
+    width: 300px !important;
 }
 
-
-.github {
-    width: 130px !important;
-}
-.git{
-margin-top: 10px;
- height: 110px;
- width: 110px !important;
-   
-}
-
-.teconologias-aprender {
+.section-tecnologias-aprender {
+    margin: 20px 0px;
+    max-height: 450px;
     background-color: #0A192F;
-}
+   }
 
-.teconologias-aprender {
- margin: 20px 0px;;
-}
-
-.node {
-    width: 160px !important;
-}
 .docker {
-    width: 300px;
+    width: 150px;
     margin-top: 10px;
 }
 .typescript {
-    width: 180px;
+    width: 100px;
     margin-top: 10px;
 }
 
-.titulo-tecnologias-aprender {
-    font-size: x-large;
-    margin-bottom: 15px;
-}
+@media (min-width: 800px) {
+    h1 {
+        font-size: 7vw;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    .text-titulo {
+        max-width: 450px;
+        font-size: medium;
+    }
+    .section-about{
+        position: relative;
+        bottom: -300px;
+    }
+    .texto-about {
+        font-size: medium; 
+        max-width: 450px;
+    }
+    .section-trabajos {
+        margin-top: 20px;
+        position: relative;
+        bottom: -300px;
+    }
+    .publicacion-trabajo {
+        padding: 10px;
+        background-color: rgb(48, 46, 46, 0.5);
+        border-radius: 5px;
+        padding: 10px;
+        align-items: center;
+    }
 
-/*** FORMULARIO CONTACTO ***/
+    .div-trabajos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
-.formulario-contacto {
-    color: white;
+    .section-tecnologias-conocidas {
+        position: relative;
+        bottom: -300px;
+        
+    }
 
-}
-.lista-contacto {
-    margin-top: 15px;
-}
-.lista-contacto li {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 6fr;
-    margin-bottom: 15px;
-    width: 75%;
-    font-size: medium;
     
-}
-
-.lista-contacto input{
-    padding: 6px;
-    font-size: medium;
-}
-
-.div-btn-contacto {
-    display: flex;
-    justify-content:end;
-}
-.btn-contacto {
-    padding: 10px;
-    font-size: large;
-
-}
+    .section-tecnologias-aprender {
+        position: relative;
+        bottom: -300px;
+        padding: 20px 0px;
+    }
+  }
