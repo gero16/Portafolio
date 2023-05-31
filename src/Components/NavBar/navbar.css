@@ -1,0 +1,15 @@
+.lista-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #0A192F;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+    font-size: medium;
+
+}

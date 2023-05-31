@@ -1,0 +1,20 @@
+.header-publicacion {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 10px 0px;
+}
+
+.titulo-publicacion-trabajo {
+    font-size: large;
+    margin: 5px 0px 10px 0px;
+}
+
+.div-iconos {
+    display: flex;
+    gap: 10px;
+}
+.hipervinculos-proyecto {
+    width: 32px !important;
+    height: 32px !important;
+}

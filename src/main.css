@@ -11,8 +11,6 @@ body {
     background-color: #0A192F;
 }
 
-
-
 ul {
     list-style: none;
 }
@@ -28,12 +26,18 @@ a{
 
 .flex {
     display:flex
-
 }
 
 .flex-center{
     display: flex;
     justify-content: center;
+}
+
+.flex-center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container {
@@ -45,16 +49,9 @@ h2 {
   font-size: larger;
 }
 
-.lista-navbar {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 10px;
-    margin: 20px 0px;
-    font-size: smaller;
-    width: 90%;
-}
 
-.section-about {
+
+.tabout {
     margin: 30px 0px;
 }
 .texto-about {
@@ -62,7 +59,7 @@ h2 {
     max-width: 250px;
 }
 .main-titulo {
-    margin: 15px 0px;
+    margin: 100px 0px 15px 0px;
 }
 .text-titulo {
     font-size: small;
@@ -91,10 +88,9 @@ h2 {
     margin: 15px 0px;
 }
 
-.titulo-publicacion-trabajo {
-    width: 90%;
+.publicacion-trabajo:hover {
+    filter: opacity(.8);
 }
-
 
 /*** Seccion Teconologias Conocidas ***/
 .section-tecnologias-conocidas {
@@ -114,6 +110,10 @@ h2 {
     width: 100%;
 }
 
+.section-tecnologia{
+    display: flex;
+    gap: 10px;
+}
 .section-tecnologias img {
     width: 100px;
 }
@@ -126,7 +126,11 @@ h2 {
     margin: 20px 0px;
     max-height: 450px;
     background-color: #0A192F;
-   }
+}
+
+.titulo-tecnologias-conocidas {
+    margin: 10px 0px 20px 0px;
+}
 
 .docker {
     width: 150px;
@@ -136,6 +140,28 @@ h2 {
     width: 100px;
     margin-top: 10px;
 }
+
+.tailwind {
+    width: 110px;
+}
+
+.next {
+    width: 200px;
+}
+
+.github-publicacion {
+    
+}
+
+.section {
+    gap: 40px;
+    align-items: center;
+}
+
+.section-tecnologias-aprender2 {
+    gap: 20px;
+}
+
 
 @media (min-width: 800px) {
     h1 {
@@ -148,6 +174,10 @@ h2 {
         max-width: 450px;
         font-size: medium;
     }
+    .main-titulo {
+        position: relative;
+        bottom: -100px;
+    }
     .section-about{
         position: relative;
         bottom: -300px;
@@ -157,7 +187,7 @@ h2 {
         max-width: 450px;
     }
     .section-trabajos {
-        margin-top: 20px;
+        margin-top: 60px;
         position: relative;
         bottom: -300px;
     }
@@ -177,13 +207,19 @@ h2 {
     .section-tecnologias-conocidas {
         position: relative;
         bottom: -300px;
-        
     }
 
-    
     .section-tecnologias-aprender {
         position: relative;
         bottom: -300px;
         padding: 20px 0px;
     }
   }
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.img-post {
+    margin-bottom: 10px;
+}

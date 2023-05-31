@@ -1,7 +1,5 @@
-import { useContext, useEffect } from "react";
 import { NavLink } from "react-router-dom"
-import { useState } from "react";
-import { Context } from "../../context/context";
+import  "./navbar.css"
 
 
 const NavBar = () => {
@@ -18,14 +16,19 @@ const NavBar = () => {
                 </NavLink>
             </li>
             <li className="p-2">
-                <NavLink to="/">
-                    Trabajos
-                </NavLink>
+                <a href="/#tecnologias">
+                    Tecnologias
+                </a>
             </li>
             <li className="p-2">
-                <NavLink to="/">
+                <a href="/#projects">
+                    Proyectos
+                </a>
+            </li>
+            <li className="p-2">
+                <a href="/#main">
                     Inicio
-                </NavLink>
+                </a>
             </li>
         </ul>
     )
