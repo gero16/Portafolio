@@ -1,15 +1,30 @@
-.lista-navbar {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+nav {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
     background-color: #0A192F;
-    padding: 10px;
+    padding: 10px 15px 10px 0px;
     height: 70px;
+    align-items: center;
+}
+.lista-navbar {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 10px;
     font-size: medium;
 
+}
+
+.logo {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    margin: 0px 20px;
+}
+
+.simbolo {
+    font-size: large;
 }

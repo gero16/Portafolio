@@ -2,28 +2,53 @@ import GitHub from "../../assets/github2.png"
 import Url from "../../assets/url.png"
 import "./Publicacion.css"
 
-const Publicacion = ({titulo, img, contenido, github, web}) => {
+const Publicacion = ({titulo, img, contenido, github, web, tecnologias, cover}) => {
+    console.log(tecnologias)
+    const style = {
+        backgroundImage: `url(${img})`,
+        backgroundSize: !cover ? "contain" : "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "50%"
 
+    }
     return (
         <article className="publicacion-trabajo">
-            <header className="header-publicacion">
-                <span className="titulo-publicacion-trabajo"> {titulo} </span>
-                <span className="div-iconos">
-                    <a href={github} title={github}>
-                        <img src={GitHub} alt=""  className="github-publicacion hipervinculos-proyecto"/>
+            <div className="div-img">
+                <div className="img-post" style={style}>
 
-                    </a>
-                    <a href={web} title={web}>
-                        <img src={Url} alt=""  className="url hipervinculos-proyecto"/>
-
-                    </a>
-                </span>
-            </header>
-            <div>
-                <img className="img-post" src={img} alt="" />
+                </div>
+               
             </div>
-            <div>
-                <span className="contenido-proyecto"> {contenido} </span>
+
+            <div className="publicacion-contenido">
+                <header className="header-publicacion">
+                    <span className="titulo-publicacion-trabajo"> {titulo} </span>
+                    <span className="div-iconos">
+                        <a href={github} title={github}>
+                            <img src={GitHub} alt=""  className="github-publicacion hipervinculos-proyecto"/>
+
+                        </a>
+                        <a href={web} title={web}>
+                            <img src={Url} alt=""  className="url hipervinculos-proyecto"/>
+
+                        </a>
+                    </span>
+                </header>
+
+            
+                <div>
+                    <span className="contenido-proyecto"> {contenido} </span>
+
+                </div>
+
+                <div className="tecnologias-utilizadas">
+                    {
+                        tecnologias.map((tecnologia) => {
+                            return <span> {tecnologia }</span>
+                        })
+                    }
+                
+                </div>
 
             </div>
       </article>

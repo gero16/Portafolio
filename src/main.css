@@ -40,10 +40,21 @@ a{
     flex-direction: column;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
+
+
 
 h2 {
   font-size: larger;
@@ -65,41 +76,75 @@ h2 {
     font-size: small;
     max-width: 250px;
     margin: 10px 0px;
+    color: #C6D6F5;
+    font-weight: 300;
 }
 
 /*** Seccion Proyectos ****/ 
 .section-trabajos {
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ 
 }
 
-.section-trabajos img {
-    width: 100%;
+.redes-personal {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+
+
+.redes-personal img{
+    width: 36px;
+    height: 100%;
+    filter: hue-rotate(30deg) brightness(600%);
+}
+.github-main {
+  
+}
+
+.div-img {
+    width: 400px;
+    overflow:hidden;
+}
+.img-post {
+    width: 400px;
+    height: 200px;
+
 }
 .div-trabajos {
     gap: 10px;
     margin: 20px 0px 60px 0px;
-    width: 90%;
+
 }
 
 .publicacion-trabajo {
     margin: 15px 0px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border: 1px solid rgb(18, 45, 85);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #302e2e80;
+}
+
+.publicacion-contenido {
+    margin: 0px 15px 0px 15px;
 }
 
 .publicacion-trabajo:hover {
-    filter: opacity(.8);
+    filter: opacity(.7);
 }
 
 /*** Seccion Teconologias Conocidas ***/
 .section-tecnologias-conocidas {
     margin-bottom: 10px;
     width: 100%;
+    
 }
 
-.section-tecnologias-conocidas h3 {
+.section-tecnologias-conocidas h3, p {
     color:#0A192F;
+    font-weight: 600;
 }
 
 .section-tecnologias  {
@@ -128,30 +173,83 @@ h2 {
     background-color: #0A192F;
 }
 
+.titulo-tecnologias-aprender {
+    margin: 0px 0px 15px 0px;
+}
+
+
 .titulo-tecnologias-conocidas {
     margin: 10px 0px 20px 0px;
 }
 
+.grid-tecnologias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 50%;
+    margin: 0 auto;
+    row-gap: 10px;
+}
+.html {
+    height: 100px !important;
+}
+.css {
+    height: 100px !important;
+}
+
+.git {
+    width: 120px !important;
+}
+
+.pug {
+    width: 114px !important;
+}
+.bootstrap {
+    height: 69px !important;
+    width: 80px !important;
+}
+.postgre {
+    height: 70px !important;
+    width: 70px !important;
+}
+
+.div100 {
+    height: 100px  !important;
+    display: flex  !important;
+    align-items:end  !important;
+}
+.node {
+    width: 120px !important;
+}
 .docker {
-    width: 150px;
+    width: 135px;
+    height: 100%;
     margin-top: 10px;
 }
 .typescript {
     width: 100px;
+    height: 100%;
     margin-top: 10px;
 }
 
+.section-especial {
+    
+}
+
+
 .tailwind {
-    width: 110px;
+    width: 100px;
+}
+
+.span-tailwind{
+    margin-top: 16px;
 }
 
 .next {
     width: 200px;
 }
 
-.github-publicacion {
-    
-}
 
 .section {
     gap: 40px;
@@ -160,6 +258,20 @@ h2 {
 
 .section-tecnologias-aprender2 {
     gap: 20px;
+}
+
+.tecnologias-utilizadas {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin: 10px 0px 0px 0px;
+}
+
+.tecnologias-utilizadas span {
+    border: 1px solid rgb(212, 210, 205);
+    border-radius: 10px;
+    font-size: smaller;
+    padding: 4px;
 }
 
 
@@ -186,22 +298,14 @@ h2 {
         font-size: medium; 
         max-width: 450px;
     }
+    .sobre-mi {
+        position: relative;
+        bottom: -300px;
+    }
     .section-trabajos {
         margin-top: 60px;
         position: relative;
         bottom: -300px;
-    }
-    .publicacion-trabajo {
-        padding: 10px;
-        background-color: rgb(48, 46, 46, 0.5);
-        border-radius: 5px;
-        padding: 10px;
-        align-items: center;
-    }
-
-    .div-trabajos {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .section-tecnologias-conocidas {
@@ -216,10 +320,3 @@ h2 {
     }
   }
 
-.mt-70 {
-    margin-top: 70px;
-}
-
-.img-post {
-    margin-bottom: 10px;
-}
