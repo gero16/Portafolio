@@ -12,10 +12,14 @@ const NavBar = () => {
                 <span> GN </span>
                 <span className="simbolo"> {chau} </span>
             </span>
-            <ul className="lista-navbar">
-                <li className="p-2">
+            <ul className="lista-navbar menu">
+                <li className="p-2 especial">
                     <NavLink to="/contact">
                         Contacto
+                        <span className="border border-top">  </span>
+                        <span className="border border-right">  </span>
+                        <span className="border border-bottom">  </span>
+                        <span className="border border-left">  </span>
                     </NavLink>
                 </li>
                 <li className="p-2">

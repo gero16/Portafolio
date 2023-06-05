@@ -49,6 +49,12 @@ a{
     justify-content: space-between;
 }
 
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -93,7 +99,7 @@ h2 {
 }
 
 
-.redes-personal img{
+.redes-personal img, footer img{
     width: 36px;
     height: 100%;
     filter: hue-rotate(30deg) brightness(600%);
@@ -102,31 +108,34 @@ h2 {
   
 }
 
-.div-img {
-    width: 400px;
-    overflow:hidden;
-}
-.img-post {
-    width: 400px;
-    height: 200px;
 
-}
 .div-trabajos {
     gap: 10px;
     margin: 20px 0px 60px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .publicacion-trabajo {
     margin: 15px 0px;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
     border: 1px solid rgb(18, 45, 85);
     padding: 10px;
     border-radius: 5px;
     background-color: #302e2e80;
+    width: 320px;
 }
 
+.div-img {
+    width: 300px;
+    overflow:hidden;
+}
+.img-post {
+    width: 300px;
+    height: 150px;
+
+}
 .publicacion-contenido {
     margin: 0px 15px 0px 15px;
 }
@@ -169,8 +178,14 @@ h2 {
 
 .section-tecnologias-aprender {
     margin: 20px 0px;
-    max-height: 450px;
+
     background-color: #0A192F;
+}
+
+.section-tecnologias-aprender2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .titulo-tecnologias-aprender {
@@ -187,10 +202,29 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-    width: 50%;
     margin: 0 auto;
     row-gap: 10px;
+    width: 100%;
 }
+
+
+@keyframes dancing {
+    75% {
+        transform:translateY(20px) skew(-2deg);
+    }
+    0%, 50%, 100% {
+        transform:translateY(2) skew(0);
+    }
+    25% {
+        transform:translateY(20px) skew(2deg);
+    }
+}
+.grid-tecnologias img:hover {
+    filter: opacity(.8);
+    animation:dancing .75s ease .1s infinite;
+    
+}
+  
 .html {
     height: 100px !important;
 }
@@ -275,6 +309,20 @@ h2 {
 }
 
 
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacto input, textarea {
+    color: black;
+    font-size: medium;
+    width: 100%;
+    padding: 8px;
+  }
+
 @media (min-width: 800px) {
     h1 {
         font-size: 7vw;
@@ -302,6 +350,11 @@ h2 {
         position: relative;
         bottom: -300px;
     }
+    .publicacion-trabajo {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        width: 90%;
+    }
     .section-trabajos {
         margin-top: 60px;
         position: relative;
@@ -313,10 +366,66 @@ h2 {
         bottom: -300px;
     }
 
+    .grid-tecnologias {
+        width: 50%;
+    }
+
     .section-tecnologias-aprender {
         position: relative;
         bottom: -300px;
         padding: 20px 0px;
     }
+    .contacto {
+        position: relative;
+        bottom: -300px;
+        padding: 20px 0px;
+        margin: 20px;
+        border-radius: 5px;
+        border: 1px solid #113263;
+       
+    }
+    footer {
+        position: relative;
+        bottom: -320px;
+    
+    }
   }
 
+  .formulario-contacto li {
+    margin: 10px 0px;
+  }
+
+  .formulario-contacto input, textarea {
+    margin-top: 10px;
+
+  }
+
+ .btn-contacto {
+    padding: 8px;
+    color: #565757;
+    font-weight: 550;
+    cursor: pointer;
+    font-size: medium;
+ }
+
+.redes-personal img {
+    transition: ease-out 0.5s;
+}
+
+.redes-personal img:hover {
+    transition: ease-out 0.5s;
+    transform: scale(1.3);
+    filter: contrast(40%) sepia(1) hue-rotate(190deg) saturate(1000%) !important;
+    cursor: pointer;
+}
+ .linkedin-main:hover {
+    filter: contrast(40%) sepia(1) hue-rotate(190deg) saturate(1000%) !important;
+ }
+
+ .github-main:hover {
+
+ }
+
+footer {
+    padding: 20px 0px;
+}

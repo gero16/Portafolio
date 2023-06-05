@@ -21,6 +21,7 @@ import { Context } from "../context/context"
 import Publicacion from "../Components/Publicacion/Publicacion"
 import { Fade } from "react-awesome-reveal";
 import { useLocation, useParams } from "react-router-dom"
+import Contact from "../Components/Contact/Contact"
 
 
 
@@ -45,9 +46,10 @@ const App = ()=> {
 
             <span className="redes-personal">
               <img src={GitHub} alt="" className="github-main"/>
-              <img src={Linkedin} alt="" className="github-main"/>
-              
+              <img src={Linkedin} alt="" className="linkedin-main"/>
             </span>
+
+            <span>geronicola1696@gmail.com</span>
           </Fade>
         </main>
 
@@ -189,6 +191,17 @@ const App = ()=> {
           </section>
         
       </section>
+
+      <Contact> </Contact>
+
+      <footer>
+        <div className="container flex-around">
+          <span> Geronimo Nicola </span>
+          <span><img src={GitHub} alt="" className="github-main"/>
+              </span>
+          <span> <img src={Linkedin} alt="" className="github-main"/></span>
+        </div>
+      </footer>
     </div>
 
     
