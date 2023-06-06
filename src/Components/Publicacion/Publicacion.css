@@ -1,13 +1,13 @@
 .header-publicacion {
     display: flex;
     justify-content: space-between;
+    align-items: end;
     gap: 5px;
     margin: 10px 0px;
 }
 
 .titulo-publicacion-trabajo {
-    font-size: large;
-    margin: 5px 0px 10px 0px;
+    font-size: larger;
 }
 
 .div-iconos {
@@ -15,6 +15,14 @@
     gap: 10px;
 }
 .hipervinculos-proyecto {
-    width: 32px !important;
-    height: 32px !important;
+    width: 30px !important;
+    height: 30px !important;
 }
+
+.tecnologias-utilizadas span {
+    border: 1px solid rgb(212, 210, 205);
+    border-radius: 10px;
+    font-size: smaller;
+    padding: 4px;
+}
+

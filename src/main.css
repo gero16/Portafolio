@@ -66,7 +66,9 @@ h2 {
   font-size: larger;
 }
 
-
+.subtitulo {
+    color: rgb(106, 252, 101) !important;
+}
 
 .tabout {
     margin: 30px 0px;
@@ -88,7 +90,7 @@ h2 {
 
 /*** Seccion Proyectos ****/ 
 .section-trabajos {
-    margin-top: 20px;
+    margin-top: 30px;
  
 }
 
@@ -99,13 +101,17 @@ h2 {
 }
 
 
-.redes-personal img, footer img{
-    width: 36px;
+.redes-personal img, footer img, .span-correo img{
+    width: 30px !important;
     height: 100%;
     filter: hue-rotate(30deg) brightness(600%);
 }
 .github-main {
   
+}
+
+.correo-main {
+    width: 45px !important;
 }
 
 
@@ -124,7 +130,6 @@ h2 {
     padding: 10px;
     border-radius: 5px;
     background-color: #302e2e80;
-    width: 320px;
 }
 
 .div-img {
@@ -158,10 +163,9 @@ h2 {
 
 .section-tecnologias  {
     margin: 10px 0px;
-    background-color: white;
+    background-color:  #F8F9F9;
     padding: 20px 0px;
-    max-height: 600px;
-    width: 100%;
+ 
 }
 
 .section-tecnologia{
@@ -169,11 +173,7 @@ h2 {
     gap: 10px;
 }
 .section-tecnologias img {
-    width: 100px;
-}
-
-.img-triada {
-    width: 300px !important;
+    width: 70px;
 }
 
 .section-tecnologias-aprender {
@@ -208,6 +208,7 @@ h2 {
 }
 
 
+
 @keyframes dancing {
     75% {
         transform:translateY(20px) skew(-2deg);
@@ -219,6 +220,8 @@ h2 {
         transform:translateY(20px) skew(2deg);
     }
 }
+
+
 .grid-tecnologias img:hover {
     filter: opacity(.8);
     animation:dancing .75s ease .1s infinite;
@@ -301,12 +304,7 @@ h2 {
     margin: 10px 0px 0px 0px;
 }
 
-.tecnologias-utilizadas span {
-    border: 1px solid rgb(212, 210, 205);
-    border-radius: 10px;
-    font-size: smaller;
-    padding: 4px;
-}
+
 
 
 .contacto {
@@ -408,9 +406,24 @@ h2 {
     font-size: medium;
  }
 
+ .redes-personal  {
+   align-items: center;
+   font-size: smaller;
+   flex-wrap: wrap;
+}
+
+.span-correo {
+    font-size: medium;
+}
+
 .redes-personal img {
+    width: 35px;
     transition: ease-out 0.5s;
 }
+.span-correo img {
+    width: 40px !important;
+}
+
 
 .redes-personal img:hover {
     transition: ease-out 0.5s;

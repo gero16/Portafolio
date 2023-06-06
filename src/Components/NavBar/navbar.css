@@ -14,37 +14,59 @@ nav {
     flex-direction: row-reverse;
     align-items: center;
     gap: 10px;
-    font-size: medium;
+    font-size: smaller;
+    margin-right: 15px;
 
 }
 
 .logo {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: xx-large;
-    margin: 0px 20px;
+  margin: 0px 10px;
 }
 
+
 .simbolo {
-    font-size: x-large;
+    font-size: medium;
     color: rgb(106, 252, 101) !important;
+    font-weight: 600;
 }
 
 .redes-personal {
     margin: 0px 0px 10px 0px;
 }
 
-
+.span-correo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
  
-@keyframes dancing {
-    25% {
-      transform:translateY(20px) skew(-2deg);
-    }
-    0%, 50%, 100% {
-      transform:translateY(0) skew(0);
-    }
-    75% {
-      transform:translateY(20px) skew(2deg);
-    }
-  }
+.img-idioma {
+  width: 32px !important;
+  cursor: pointer;
+}
 
+@keyframes dancing {
+  25% {
+    transform:translateY(20px) skew(-2deg);
+  }
+  0%, 50%, 100% {
+    transform:translateY(0) skew(0);
+  }
+  75% {
+    transform:translateY(20px) skew(2deg);
+  }
+}
+
+
+@media (min-width: 800px) {
+  .lista-navbar {
+    font-size: medium;
+  }
+  .simbolo {
+    font-size: x-large;
+  }
+  .logo {
+    font-size: xx-large;
+}
+
+}

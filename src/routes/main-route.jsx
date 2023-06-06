@@ -17,17 +17,19 @@ import Css from "../assets/css.svg"
 import Html from "../assets/html.svg"
 import Next from "../assets/next.svg"
 import Linkedin from "../assets/in.png"
+import Correo from "../assets/correo.png"
 import { Context } from "../context/context"
 import Publicacion from "../Components/Publicacion/Publicacion"
 import { Fade } from "react-awesome-reveal";
 import { useLocation, useParams } from "react-router-dom"
 import Contact from "../Components/Contact/Contact"
+import { useContext } from "react"
 
 
 
 const App = ()=> {
-  const location = useLocation()
-  console.log(location.hash)
+  const { cambiarLenguaje } = useContext(Context)
+  
   return (
     <div className="App">
 
@@ -36,20 +38,28 @@ const App = ()=> {
         <main className="main-titulo" id="main" > 
           <Fade cascade >
             <h1> Gerónimo Nicola </h1>
-            <h2> Full Stack Web Developer </h2>
+            <h2 className="subtitulo"> Full Stack Web Developer </h2>
 
             <p className="text-titulo">
-            Soy un Full Stack Web Developer residente en Montevideo, Uruguay, especializado en Javascript
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi temporibus adipisci quidem nulla amet fugit, 
-            at odit modi voluptatum distinctio, sequi sapiente atque autem labore rem! Quibusdam, omnis. Quos, velit.
+              Soy un Full Stack Web Developer Junior apasionado por el desarrollo web, 
+              residente en Montevideo, Uruguay. 
             </p>
 
             <span className="redes-personal">
-              <img src={GitHub} alt="" className="github-main"/>
-              <img src={Linkedin} alt="" className="linkedin-main"/>
-            </span>
+              <a href="https://github.com/gero16">
+                <img src={GitHub} alt="" className="github-main"/>
+              </a>
+              <a href="https://www.linkedin.com/in/geronicola">
+                <img src={Linkedin} alt="" className="linkedin-main"/>
+              </a>
 
-            <span>geronicola1696@gmail.com</span>
+              <span className="span-correo">
+                <img src={Correo} alt=""  className="correo-main"/> 
+                geronicola1696@gmail.com
+              </span>
+
+            </span>
+            
           </Fade>
         </main>
 
@@ -61,7 +71,7 @@ const App = ()=> {
                 titulo={"Tienda Virtual - Proyecto final"} 
                 img="https://res.cloudinary.com/geronicola/image/upload/v1685907757/prspzggsc2ipgqozjpfd.png"
                 contenido={"Continuacion del proyecto final del curso de React Js realizado en Coderhouse, marzo del 2023. Es una tienda virtual de productos, que cuenta con un sistema de sesion y administracion de productos utilizando firebase como backend"}
-                github={"https://res.cloudinary.com/geronicola/image/upload/v1685907396/ltwiuqesjr8wdjqqcmbl.png"}
+                github={"https://github.com/gero16/tienda-virtual"}
                 web={"https://tienda-virtual-lime.vercel.app/"}
                 tecnologias={["React Js", "Firebase", "Bootstrap"]}
                 /> 

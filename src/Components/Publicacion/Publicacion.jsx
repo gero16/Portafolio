@@ -3,7 +3,6 @@ import Url from "../../assets/url.png"
 import "./Publicacion.css"
 
 const Publicacion = ({titulo, img, contenido, github, web, tecnologias, cover}) => {
-    console.log(tecnologias)
     const style = {
         backgroundImage: `url(${img})`,
         backgroundSize: !cover ? "contain" : "cover",
@@ -44,6 +43,9 @@ const Publicacion = ({titulo, img, contenido, github, web, tecnologias, cover}) 
                 <div className="tecnologias-utilizadas">
                     {
                         tecnologias.map((tecnologia) => {
+                            {
+                                {}
+                            }
                             return <span> {tecnologia }</span>
                         })
                     }
