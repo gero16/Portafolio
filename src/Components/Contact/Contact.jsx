@@ -12,16 +12,16 @@ const Contact = () => {
                 <form action={urlFrontend} method="POST" className="formulario-contacto">
                     <ul className="lista-contacto">
                         <li>
-                            <label htmlFor="">Nombre </label>
-                            <input type="text" name="nombre"/>
+                            <label htmlFor="nombre">Nombre </label>
+                            <input type="text" name="nombre" id="nombre"/>
                         </li>
                         <li>
-                            <label htmlFor=""> Correo </label>
-                            <input type="text" name="correo"/>
+                            <label htmlFor="correo"> Correo </label>
+                            <input type="text" name="correo" id="correo"/>
                         </li>
                         <li>
-                            <label htmlFor=""> Mensaje </label>
-                            <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                            <label htmlFor="mensaje"> Mensaje </label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" ></textarea>
                         </li>
                         <li>
                             <div></div>
