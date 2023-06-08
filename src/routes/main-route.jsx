@@ -21,14 +21,13 @@ import Correo from "../assets/correo.png"
 import { Context } from "../context/context"
 import Publicacion from "../Components/Publicacion/Publicacion"
 import { Fade } from "react-awesome-reveal";
-import { useLocation, useParams } from "react-router-dom"
 import Contact from "../Components/Contact/Contact"
 import { useContext } from "react"
 
 
 
 const App = ()=> {
-  const { cambiarLenguaje } = useContext(Context)
+  const { cambiarLenguaje, english } = useContext(Context)
   
   return (
     <div className="App">
@@ -47,14 +46,14 @@ const App = ()=> {
 
             <span className="redes-personal">
               <a href="https://github.com/gero16">
-                <img src={GitHub} alt="" className="github-main"/>
+                <img src={GitHub} alt="" className="redes-personal-img github-main"/>
               </a>
               <a href="https://www.linkedin.com/in/geronicola">
-                <img src={Linkedin} alt="" className="linkedin-main"/>
+                <img src={Linkedin} alt="" className="redes-personal-img  linkedin-main"/>
               </a>
 
               <span className="span-correo">
-                <img src={Correo} alt=""  className="correo-main"/> 
+                <img src={Correo} alt=""  className="redes-personal-img  correo-main"/> 
                 geronicola1696@gmail.com
               </span>
 
@@ -70,7 +69,7 @@ const App = ()=> {
               <Publicacion 
                 titulo={"Tienda Virtual - Proyecto final"} 
                 img="https://res.cloudinary.com/geronicola/image/upload/v1685907757/prspzggsc2ipgqozjpfd.png"
-                contenido={"Continuacion del proyecto final del curso de React Js realizado en Coderhouse, marzo del 2023. Es una tienda virtual de productos, que cuenta con un sistema de sesion y administracion de productos utilizando firebase como backend"}
+                contenido={""}
                 github={"https://github.com/gero16/tienda-virtual"}
                 web={"https://tienda-virtual-lime.vercel.app/"}
                 tecnologias={["React Js", "Firebase", "Bootstrap"]}
@@ -113,74 +112,85 @@ const App = ()=> {
             
               <section className="grid-tecnologias">
                 <div className="text-center">
-                  <img src={Html} alt="" className="html"/>
+                  <div className="div100">
+                    <img src={Html} alt="" className="img-tecnologias html"/>
+                  </div>
                   <p> HTML </p>
                 </div>
                 <div className="text-center">
-                  <img src={Css} alt="" className="css"/>
+                  <div className="div100">
+                    <img src={Css} alt="" className="img-tecnologias css"/>
+                  </div>
                   <p> CSS </p>
                 </div>
                 <div className="text-center">
-                  <img src={Js} alt=""/>
+                  <div className="div100">
+                    <img src={Js} alt="" className="img-tecnologias js"/>
+                  </div>
                   <p> JavaScript </p>
                 </div>
               </section>
 
               <section className="grid-tecnologias">
                 <div className="text-center">
-                <img src={Vite} alt=""  className="vite"/>
-                <p> Vite </p>
-                </div>
+                  <div className="div100">
+                    <img src={Vite} alt=""  className="img-tecnologias  vite"/>
+                  </div>
+                  <p> Vite </p>
+                  </div>
                 <div className="text-center">
-                <img src={GitHub} alt=""  className="github"/>
-                <p>Github</p>
+                  <div className="div100">
+                  <img src={GitHub} alt=""  className="img-tecnologias github"/>
+                  </div>
+                  <p>Github</p>
                 </div>
+
                 <div className="text-center">
-                  
-                  <img src={Pug} alt="" className="pug"/>
+                  <img src={Pug} alt="" className="img-tecnologias pug"/>
                   <p>Pug JS</p>
                 </div>
               </section>
 
               <section className="grid-tecnologias section-especial">
-                
-              <div className="text-center">
-                <div className="div100">
-                  <img src={Git} alt="" className="git"/>
+                <div className="text-center">
+                  <div className="div100">
+                    <img src={Git} alt="" className="img-tecnologias git"/>
+                  </div>
+                  <p>Git</p>
+                  </div>
+                <div className="text-center">
+                  <div className="div100">
+                    <img src={Bootstrap} alt="" className="img-tecnologias bootstrap"/>
+                  </div>
+                  <p>Bootstrap</p>
                 </div>
-                <p>Git</p>
-                </div>
-              <div className="text-center">
-                <div className="div100">
-                  <img src={Bootstrap} alt="" className="bootstrap"/>
-                </div>
-                <p>Bootstrap</p>
-                </div>
-              <div className="text-center">
-                <div className="div100">
-                <img src={Postgre} alt="" className="postgre"/>
-                </div>
-                <p>PostgreSQL</p>
+                <div className="text-center">
+                  <div className="div100">
+                  <img src={Postgre} alt="" className="img-tecnologias postgre"/>
+                  </div>
+                  <p>PostgreSQL</p>
                 </div>
               </section>
 
               <section className="grid-tecnologias">
-              <div className="text-center"> 
-                <div className="div100">
-                  <img src={Node} alt="" className="node"/>
+                <div className="text-center"> 
+                  <div className="div100">
+                    <img src={Node} alt="" className="img-tecnologias node"/>
+                  </div>
+                  <p>Node JS</p>
                 </div>
-                <p>Node JS</p>
-              </div>
-              <div className="text-center"> 
-                <div className="div100">
-                  <img src={React} alt="" />
+                <div className="text-center"> 
+                  <div className="div100">
+                    <img src={React} alt="" className="img-tecnologias react"/>
+                  </div>
+                <p>React JS</p>
                 </div>
-               <p>React JS</p>
-              </div>
-              <div className="text-center"> 
-                <img src={Mongo} alt=""  className="mongo"/>
-                <p> Mongo DB </p>
-              </div>
+                <div className="text-center">
+                  <div className="div100">
+                    <img src={Mongo} alt=""  className="img-tecnologias mongo"/>
+                  </div> 
+                  <p> Mongo DB </p>
+                </div>
               </section>
  
   

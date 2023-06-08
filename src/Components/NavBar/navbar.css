@@ -34,12 +34,7 @@ nav {
     margin: 0px 0px 10px 0px;
 }
 
-.span-correo {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
- 
+
 .img-idioma {
   width: 32px !important;
   cursor: pointer;

@@ -1,8 +1,12 @@
+import { useContext } from "react"
 import GitHub from "../../assets/github2.png"
 import Url from "../../assets/url.png"
+import { Context } from "../../context/context"
 import "./Publicacion.css"
 
 const Publicacion = ({titulo, img, contenido, github, web, tecnologias, cover}) => {
+    const { english } = useContext(Context)
+
     const style = {
         backgroundImage: `url(${img})`,
         backgroundSize: !cover ? "contain" : "cover",
