@@ -8,6 +8,7 @@ nav {
     padding: 10px 15px 10px 0px;
     height: 70px;
     align-items: center;
+   
 }
 .lista-navbar {
     display: flex;
@@ -17,10 +18,16 @@ nav {
     font-size: smaller;
     margin-right: 15px;
 
+
+}
+
+.lista-navbar li {
+  cursor: pointer;
 }
 
 .logo {
-  margin: 0px 10px;
+  margin: 0px 20px;
+  
 }
 
 
@@ -36,7 +43,7 @@ nav {
 
 
 .img-idioma {
-  width: 32px !important;
+  width: 30px;
   cursor: pointer;
 }
 

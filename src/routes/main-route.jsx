@@ -22,14 +22,16 @@ import { Context } from "../context/context"
 import Publicacion from "../Components/Publicacion/Publicacion"
 import { Fade } from "react-awesome-reveal";
 import Contact from "../Components/Contact/Contact"
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { cuartoProyectoEng, cuartoProyectoEsp, primerProyectoEng, primerProyectoEsp, segundoProyectoEng, segundoProyectoEsp, tercerProyectoEng, tercerProyectoEsp } from "../helpers/idioma"
+import { useEffect } from "react"
 
 
 
 const App = ()=> {
   const { cambiarLenguaje, english } = useContext(Context)
-  
+
+ 
   return (
     <div className="App">
 
@@ -87,7 +89,7 @@ const App = ()=> {
 
               <Publicacion 
                 titulo={"Blog para Cliente"} 
-                img="https://camo.githubusercontent.com/eb0081f7f57d4f3c29ca21687b46162bbe9c0b2df501241820c04bb304be5521/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6765726f6e69636f6c612f696d6167652f75706c6f61642f76313637363531363335312f676f767135796c726c66667179646432633468762e6a7067"
+                img="https://res.cloudinary.com/geronicola/image/upload/v1686257613/akk1tisxhetebhc8lzao.png"
                 contenido={english ? segundoProyectoEng : segundoProyectoEsp}
                 github={"https://github.com/gero16/blog"}
                 web={"https://www.luzdeluna.blog/"}

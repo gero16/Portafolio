@@ -6,7 +6,7 @@ const Contact = () => {
     const {urlFrontend} = useContext(Context)
     return (
         <main className="container">
-            <div className="contacto flex-column">
+            <div className="contacto flex-column" id="contact">
                 <h2> Contacto </h2>
 
                 <form action={urlFrontend} method="POST" className="formulario-contacto">

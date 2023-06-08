@@ -4,7 +4,8 @@ import { useContext } from "react"
 import { Context } from "../../context/context"
 import English from "../../assets/reino-unido.png"
 import Spanish from "../../assets/esp.png"
-import { useEffect } from "react"
+import { Link } from 'react-scroll'
+
 
 const NavBar = () => {
     const { cambiarLenguaje, english } = useContext(Context)
@@ -19,7 +20,7 @@ const NavBar = () => {
                 <span className="simbolo"> {chau} </span>
             </span>
 
-            <ul className="lista-navbar menu">
+            <ul className="lista-navbar">
                 <li className="p-2">
                     <img 
                         className="img-idioma" 
@@ -29,25 +30,26 @@ const NavBar = () => {
                         onClick={() => cambiarLenguaje()}/>
                 </li>
                 <li className="p-2 especial">
-                    <NavLink to="/contact">
+                    <Link to="contact">
                         {english ? "Contact" : "Contacto"}
-                
-                    </NavLink>
+                    </Link>
                 </li>
                 <li className="p-2">
-                    <a href="/#tecnologias">
-                    {english ? "Technologies" : "Tecnologias"}
-                    </a>
+                    <Link to="tecnologias">
+                        {english ? "Technologies" : "Tecnologias"}
+                    </Link>
+                    
                 </li>
                 <li className="p-2">
-                    <a href="/#projects">
-                    {english ? "Projects" : "Proyectos"}
-                    </a>
+                    <Link to="projects">
+                        {english ? "Projects" : "Proyectos"}
+                    </Link>
+                    
                 </li>
                 <li className="p-2">
-                    <a href="/#main">
+                    <Link to="main">
                         {english ? "Home" : "Inicio"}
-                    </a>
+                    </Link>
                 </li>
                 
             </ul>
