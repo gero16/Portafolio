@@ -15,10 +15,12 @@
     gap: 10px;
 }
 .hipervinculos-proyecto {
-    width: 30px !important;
-    height: 30px !important;
+    width: 30px;
+    height: 30px;
 }
+.contenido-proyecto {
 
+}
 .tecnologias-utilizadas span {
     border: 1px solid rgb(212, 210, 205);
     border-radius: 10px;

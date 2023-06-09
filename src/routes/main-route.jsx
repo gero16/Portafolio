@@ -80,7 +80,7 @@ const App = ()=> {
             <div className="div-trabajos">
               <Publicacion 
                 titulo={"Tienda Virtual - Proyecto final"} 
-                img="https://res.cloudinary.com/geronicola/image/upload/v1685907757/prspzggsc2ipgqozjpfd.png"
+                img="https://res.cloudinary.com/geronicola/image/upload/v1686262953/mzizyticb4ba7s4atcff.png"
                 contenido={english ? primerProyectoEng : primerProyectoEsp}
                 github={"https://github.com/gero16/tienda-virtual"}
                 web={"https://tienda-virtual-lime.vercel.app/"}

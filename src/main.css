@@ -141,12 +141,12 @@ h2 {
 }
 
 .div-img {
-    width: 400px;
+    width: 300px;
     overflow:hidden;
 }
 .img-post {
-    width: 400px;
-    height:200px;
+    width: 300px;
+    height:150px;
 
 }
 .publicacion-contenido {
@@ -392,6 +392,29 @@ footer {
     padding: 20px 0px;
 }
 
+.mensaje-enviado {
+    color: #082042;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #0599ee;
+    display: flex;
+    align-items: center;
+
+}
+
+@media (min-width: 900px) {
+    .div-img {
+        width: 400px;
+        overflow:hidden;
+    }
+    .img-post {
+        width: 400px;
+        height:200px;
+    
+    }
+}
+
 @media (min-width: 800px) {
     h1 {
         font-size: 7vw;
@@ -424,6 +447,7 @@ footer {
         grid-template-columns: 1fr 3fr;
         width: 90%;
     }
+   
     .section-trabajos {
         margin-top: 60px;
         position: relative;
@@ -458,6 +482,6 @@ footer {
         bottom: -320px;
     
     }
-  }
+}
 
   
