@@ -153,7 +153,8 @@ h2 {
     margin: 0px 15px 0px 15px;
 }
 
-.publicacion-trabajo:hover {
+.publicacion-trabajo:hover .img-post
+{
     filter: opacity(.7);
 }
 
@@ -334,12 +335,17 @@ h2 {
     margin: 10px 0px 0px 0px;
 }
 
+.mensaje-error {
+    height: 30px;
+}
 
 .contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid #bdbfc2;
+    padding-bottom: 10px;
   }
 
   .contacto input, textarea {
@@ -389,7 +395,7 @@ h2 {
  }
 
 footer {
-    padding: 20px 0px;
+    padding: 20px 0px 30px 0px;
 }
 
 .mensaje-enviado {
@@ -473,8 +479,7 @@ footer {
         bottom: -300px;
         padding: 20px 0px;
         margin: 20px;
-        border-radius: 5px;
-        border: 1px solid #113263;
+
        
     }
     footer {

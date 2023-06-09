@@ -1,15 +1,16 @@
 import { useContext, useState } from "react"
 import { Context } from "../../context/context"
+import { message } from "../../helpers/funciones"
 
 const Contact = () => {
-    
     const [state, setState] = useState({nombre: "", correo: "", mensaje: ""})
     const [enviado, setEnviado] = useState(false)
-    console.log(state)
-    const {urlFrontend} = useContext(Context)
+    
+    const {urlFrontend, message, mensaje} = useContext(Context)
+
+    console.log(mensaje)
 
     const sendMensaje = async () => {
-  
         const settings = { 
         method: 'POST', 
         headers: { 
@@ -19,15 +20,18 @@ const Contact = () => {
         };
 
     try {
-        const fetchResponse = await fetch(`http://localhost:3000/`, settings);
-    
-        if(fetchResponse.status === 200){
-          console.log("Mensaje enviado correctamente")
-          setEnviado(true)
-
-          setTimeout(() => {
-            setEnviado(false)
-          }, 6000);
+        if(state.correo == "") {
+            message("Su correo no puede quedar vacio!")
+        }
+        if(state.mensaje == "") {
+            message("Su mensaje no puede quedar vacio!")
+        }
+        if(state.mensaje !== "" && state.correo !== "") {
+            const fetchResponse = await fetch(`http://localhost:3000/`, settings);
+            if(fetchResponse.status === 200){
+                setEnviado(true)
+                message("Mensaje enviado correctamente!")
+            }
         }
     } catch (e) {
         return e;
@@ -40,11 +44,12 @@ const Contact = () => {
                 <h2> Contacto </h2>
                 
                 {
-                    enviado === true 
+                    enviado === true
                         ? <>
-                            <h3 className="mensaje-enviado"> Mensaje enviado correctamente!</h3>
+                            <h3 className="mensaje-enviado"> { mensaje } </h3>
                         </>
-                        : <form action={urlFrontend} method="POST" className="formulario-contacto">
+                        : 
+                        <>                        <form action={urlFrontend} method="POST" className="formulario-contacto">
                             <ul className="lista-contacto">
                                 <li>
                                     <label htmlFor="nombre">Nombre </label>
@@ -88,6 +93,17 @@ const Contact = () => {
                             </ul>
                             
                         </form>
+
+                        {
+                        mensaje === "Su correo y/o su mensaje no puede estar vacio"
+                         ? <> 
+                            <h3 className="mensaje-error"> {mensaje}</h3>
+                         </>
+                         : <> <h3 className="mensaje-error">{mensaje}</h3> </>
+                        } 
+
+                        </>
+
                 }
                 
             </div>

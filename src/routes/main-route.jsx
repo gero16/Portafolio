@@ -1,7 +1,6 @@
 
 import Git from "../assets/git.svg"
 import GitHub from "../assets/github.png"
-import Triada from "../assets/triada.png"
 import React from "../assets/react.png"
 import Node from "../assets/node.png"
 import Mongo from "../assets/mongo.svg"
@@ -24,14 +23,11 @@ import { Fade } from "react-awesome-reveal";
 import Contact from "../Components/Contact/Contact"
 import { useContext, useState } from "react"
 import { cuartoProyectoEng, cuartoProyectoEsp, primerProyectoEng, primerProyectoEsp, segundoProyectoEng, segundoProyectoEsp, tercerProyectoEng, tercerProyectoEsp } from "../helpers/idioma"
-import { useEffect } from "react"
-
-
 
 const App = ()=> {
   const { cambiarLenguaje, english } = useContext(Context)
 
- 
+
   return (
     <div className="App">
 
@@ -43,7 +39,7 @@ const App = ()=> {
             <h2 className="subtitulo"> Full Stack Web Developer </h2>
 
             <p className="text-titulo">
-              Soy un Full Stack Web Developer Junior apasionado por el desarrollo web, 
+            Full Stack Web Developer Junior apasionado por el desarrollo web, 
               residente en Montevideo, Uruguay. 
             </p>
 
@@ -74,49 +70,53 @@ const App = ()=> {
           </Fade>
         </main>
 
+       
+      </div>
 
-        <section className="section-trabajos" id="projects">
-            <h3> Algunos de mis Proyectos </h3>
-            <div className="div-trabajos">
+      <section className="section-trabajos" id="projects">
+            <div className="container">
+
+              <h3> Algunos de mis Proyectos </h3>
+              <div className="div-trabajos">
+                <Publicacion 
+                  titulo={"Tienda Virtual - Proyecto final"} 
+                  img="https://res.cloudinary.com/geronicola/image/upload/v1686262953/mzizyticb4ba7s4atcff.png"
+                  contenido={english ? primerProyectoEng : primerProyectoEsp}
+                  github={"https://github.com/gero16/tienda-virtual"}
+                  web={"https://tienda-virtual-lime.vercel.app/"}
+                  tecnologias={["React Js", "Firebase", "Bootstrap"]}
+                  /> 
+
+                <Publicacion 
+                  titulo={"Blog para Cliente"} 
+                  img="https://res.cloudinary.com/geronicola/image/upload/v1686257613/akk1tisxhetebhc8lzao.png"
+                  contenido={english ? segundoProyectoEng : segundoProyectoEsp}
+                  github={"https://github.com/gero16/blog"}
+                  web={"https://www.luzdeluna.blog/"}
+                  tecnologias={["Javascript", "Node Js", "Pug Js", "Postgre SQL"]}
+                />
+
+                <Publicacion 
+                  titulo={"Pokedex - Proyecto Final"} 
+                  img="https://res.cloudinary.com/geronicola/image/upload/v1686252165/qjleughaubj3m87uqufv.jpg"
+                  contenido={english ? tercerProyectoEng : tercerProyectoEsp}
+                  github={"https://github.com/reginamaite/proyecto-final-frontend"}
+                  web={"No hay"}
+                  tecnologias={["React Js", "Node Js"]}
+                  cover={true}
+                />
+
               <Publicacion 
-                titulo={"Tienda Virtual - Proyecto final"} 
-                img="https://res.cloudinary.com/geronicola/image/upload/v1686262953/mzizyticb4ba7s4atcff.png"
-                contenido={english ? primerProyectoEng : primerProyectoEsp}
-                github={"https://github.com/gero16/tienda-virtual"}
-                web={"https://tienda-virtual-lime.vercel.app/"}
-                tecnologias={["React Js", "Firebase", "Bootstrap"]}
-                /> 
-
-              <Publicacion 
-                titulo={"Blog para Cliente"} 
-                img="https://res.cloudinary.com/geronicola/image/upload/v1686257613/akk1tisxhetebhc8lzao.png"
-                contenido={english ? segundoProyectoEng : segundoProyectoEsp}
-                github={"https://github.com/gero16/blog"}
-                web={"https://www.luzdeluna.blog/"}
-                tecnologias={["Javascript", "Node Js", "Pug Js", "Postgre SQL"]}
-              />
-
-              <Publicacion 
-                titulo={"Pokedex - Proyecto Final"} 
-                img="https://res.cloudinary.com/geronicola/image/upload/v1686252165/qjleughaubj3m87uqufv.jpg"
-                contenido={english ? tercerProyectoEng : tercerProyectoEsp}
-                github={"https://github.com/reginamaite/proyecto-final-frontend"}
-                web={"No hay"}
-                tecnologias={["React Js", "Node Js"]}
-                cover={true}
-              />
-
-            <Publicacion 
-                titulo={"Tienda Virtual - Vanilla Js"} 
-                img="https://res.cloudinary.com/geronicola/image/upload/v1685731780/waz1ashegfwgnpxy0f8q.jpg"
-                contenido={english ? cuartoProyectoEng : cuartoProyectoEsp}
-                github={"https://github.com/reginamaite/proyecto-final-frontend"}
-                web={"No hay"}
-                tecnologias={["Javascript", "Mongo DB"]}
-              />
+                  titulo={"Tienda Virtual - Vanilla Js"} 
+                  img="https://res.cloudinary.com/geronicola/image/upload/v1685731780/waz1ashegfwgnpxy0f8q.jpg"
+                  contenido={english ? cuartoProyectoEng : cuartoProyectoEsp}
+                  github={"https://github.com/reginamaite/proyecto-final-frontend"}
+                  web={"No hay"}
+                  tecnologias={["Javascript", "Mongo DB"]}
+                />
+            </div>
           </div>
         </section>
-      </div>
 
       <section className="section-tecnologias-conocidas" id="tecnologias">
           <article className="section-tecnologias">
@@ -228,7 +228,7 @@ const App = ()=> {
 
       <footer>
         <div className="container flex-around">
-          <span> Geronimo Nicola </span>
+          <span> geronicola1696@gmail.com </span>
           <span><img src={GitHub} alt="imagen con el icono de github" className="github-main"/>
               </span>
           <span> <img src={Linkedin} alt="imagen con el icono de linkedin" className="github-main"/></span>

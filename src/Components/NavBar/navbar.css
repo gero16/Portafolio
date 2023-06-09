@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 nav {
     position: fixed;
     top: 0;
-    width: 100%;
     z-index: 10;
+    width: 100%;
     background-color: #0A192F;
     padding: 10px 15px 10px 0px;
     height: 70px;
     align-items: center;
-   
+    filter:opacity(90%)
 }
 .lista-navbar {
     display: flex;
@@ -17,8 +18,7 @@ nav {
     gap: 10px;
     font-size: smaller;
     margin-right: 15px;
-
-
+    filter:opacity(100%)
 }
 
 .lista-navbar li {
@@ -26,10 +26,9 @@ nav {
 }
 
 .logo {
-  margin: 0px 20px;
-  
+  margin: 0px 20px;  
+  filter:opacity(100%)
 }
-
 
 .simbolo {
     font-size: medium;
