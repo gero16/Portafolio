@@ -44,7 +44,7 @@ const Contact = () => {
                 <h2> Contacto </h2>
                 
                 {
-                    enviado === true
+                    enviado === true && mensaje === "Mensaje enviado correctamente!"
                         ? <>
                             <h3 className="mensaje-enviado"> { mensaje } </h3>
                         </>
@@ -94,13 +94,9 @@ const Contact = () => {
                             
                         </form>
 
-                        {
-                        mensaje === "Su correo y/o su mensaje no puede estar vacio"
-                         ? <> 
-                            <h3 className="mensaje-error"> {mensaje}</h3>
-                         </>
-                         : <> <h3 className="mensaje-error">{mensaje}</h3> </>
-                        } 
+
+                        <h3 className="mensaje-error"> {mensaje}</h3>
+                
 
                         </>
 
