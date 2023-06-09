@@ -11,8 +11,8 @@ export const CustomProvider = ({ children }) => {
         return english
     }
 
-    const urlFrontend = import.meta.env.VITE_URL_FRONTEND
-    console.log(urlFrontend)
+    const urlBackend = import.meta.env.VITE_URL_BACKEND
+    console.log(urlBackend)
 
     const message = (msj) => {
         setMensaje(msj)
@@ -23,7 +23,7 @@ export const CustomProvider = ({ children }) => {
     }
     
     return (
-        <Context.Provider value={{cambiarLenguaje, english, urlFrontend, message, mensaje}}> 
+        <Context.Provider value={{cambiarLenguaje, english, urlBackend, message, mensaje}}> 
             { children } 
         </Context.Provider>
     )

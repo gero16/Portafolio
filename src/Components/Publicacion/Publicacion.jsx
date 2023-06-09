@@ -46,11 +46,11 @@ const Publicacion = ({titulo, img, contenido, github, web, tecnologias, cover}) 
 
                 <div className="tecnologias-utilizadas">
                     {
-                        tecnologias.map((tecnologia) => {
+                        tecnologias.map((tecnologia, index) => {
                             {
                                 {}
                             }
-                            return <span> {tecnologia }</span>
+                            return <span key={index}> {tecnologia }</span>
                         })
                     }
                 

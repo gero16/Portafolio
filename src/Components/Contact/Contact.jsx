@@ -6,7 +6,7 @@ const Contact = () => {
     const [state, setState] = useState({nombre: "", correo: "", mensaje: ""})
     const [enviado, setEnviado] = useState(false)
     
-    const {urlFrontend, message, mensaje} = useContext(Context)
+    const {urlBackend, message, mensaje} = useContext(Context)
 
     console.log(mensaje)
 
@@ -27,7 +27,7 @@ const Contact = () => {
             message("Su mensaje no puede quedar vacio!")
         }
         if(state.mensaje !== "" && state.correo !== "") {
-            const fetchResponse = await fetch(`http://localhost:3000/`, settings);
+            const fetchResponse = await fetch(urlBackend, settings);
             if(fetchResponse.status === 200){
                 setEnviado(true)
                 message("Mensaje enviado correctamente!")
@@ -49,7 +49,7 @@ const Contact = () => {
                             <h3 className="mensaje-enviado"> { mensaje } </h3>
                         </>
                         : 
-                        <>                        <form action={urlFrontend} method="POST" className="formulario-contacto">
+                        <> <form action={urlBackend} method="POST" className="formulario-contacto">
                             <ul className="lista-contacto">
                                 <li>
                                     <label htmlFor="nombre">Nombre </label>
