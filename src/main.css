@@ -102,7 +102,7 @@ h2 {
 
 
 .redes-personal-img, footer img {
-    width: 35px;
+    width: 30px;
     height: 100%;
     filter: hue-rotate(30deg) brightness(600%);
 }
@@ -114,12 +114,12 @@ h2 {
     filter: contrast(40%) sepia(1) hue-rotate(190deg) saturate(1000%) ;
     cursor: pointer;
 }
-.github-main {
-  
-}
 
 .correo-main {
-    width: 45px !important;
+    width: 40px !important;
+}
+.github-main {
+  width: 32px;
 }
 
 

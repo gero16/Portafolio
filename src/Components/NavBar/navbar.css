@@ -9,26 +9,30 @@ nav {
     padding: 10px 15px 10px 0px;
     height: 70px;
     align-items: center;
-    filter:opacity(90%)
+    background-color: rgb(10 25 47 / 0.8);
+    backdrop-filter: blur(5px);
+}
+
+
+.logo {
+  margin: 0px 20px;  
+
 }
 .lista-navbar {
+
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 10px;
     font-size: smaller;
     margin-right: 15px;
-    filter:opacity(100%)
+
 }
 
 .lista-navbar li {
   cursor: pointer;
 }
 
-.logo {
-  margin: 0px 20px;  
-  filter:opacity(100%)
-}
 
 .simbolo {
     font-size: medium;

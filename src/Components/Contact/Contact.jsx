@@ -12,37 +12,34 @@ const Contact = () => {
 
     const sendMensaje = async () => {
         const settings = { 
-        method: 'POST', 
-        headers: { 
-            "Content-Type": "application/json",
-           },
-        body :  JSON.stringify(state),
+            method: 'POST', 
+            headers: { "Content-Type": "application/json" }, 
+            body :  JSON.stringify(state)
         };
-
-    try {
-        if(state.correo == "") {
-            message("Su correo no puede quedar vacio!")
-        }
-        if(state.mensaje == "") {
-            message("Su mensaje no puede quedar vacio!")
-        }
-        if(state.mensaje !== "" && state.correo !== "") {
-            const fetchResponse = await fetch(urlBackend, settings);
-            if(fetchResponse.status === 200){
-                setEnviado(true)
-                message("Mensaje enviado correctamente!")
+        try {
+            if(state.correo == "") {
+                message("Su correo no puede quedar vacio!")
             }
+            if(state.mensaje == "") {
+                message("Su mensaje no puede quedar vacio!")
+            }
+            if(state.mensaje !== "" && state.correo !== "") {
+                const fetchResponse = await fetch(urlBackend, settings);
+                if(fetchResponse.status === 200) {
+                    setEnviado(true)
+                    message("Mensaje enviado correctamente!")
+                }
+            }
+        } catch (e) {
+            return e;
         }
-    } catch (e) {
-        return e;
+        return
     }
-    return
-    }
+
     return (
         <main className="container">
             <div className="contacto flex-column" id="contact">
                 <h2> Contacto </h2>
-                
                 {
                     enviado === true && mensaje === "Mensaje enviado correctamente!"
                         ? <>
@@ -94,12 +91,9 @@ const Contact = () => {
                             
                         </form>
 
-
                         <h3 className="mensaje-error"> {mensaje}</h3>
                 
-
-                        </>
-
+                    </>
                 }
                 
             </div>
