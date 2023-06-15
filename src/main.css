@@ -1,492 +1,352 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Montserrat', sans-serif;
-    color: #C6D6F5;
-    box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: #c6d6f5;
+  box-sizing: border-box;
 }
 body {
-    background-color: #0A192F;
+  background-color: #0a192f;
 }
+
+a {
+   text-decoration: none;
+}
+
 
 ul {
-    list-style: none;
+        list-style: none;
 }
-
-a{
-    text-decoration: none;
-}
-
- a {
-    text-decoration: none;
-    color: #d6d8d7;
+a {
+   text-decoration: none;
+             color: #d6d8d7;
 }
 
 .flex {
-    display:flex
+  display: flex;
 }
 
-.flex-center{
-    display: flex;
-    justify-content: center;
+.flex-center {
+          display: flex;
+  justify-content: center;
 }
 
 .flex-center-column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+          display: flex;
+  justify-content: center;
+      align-items: center;
+   flex-direction: column;
 }
 
 .text-center {
-    text-align: center;
+       text-align: center;
 }
 
 .flex-between {
-    display: flex;
-    justify-content: space-between;
+          display: flex;
+  justify-content: space-between;
 }
 
 .flex-around {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+          display: flex;
+  justify-content: space-around;
+      align-items: center;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+   width: 80%;
+  margin: 0 auto;
 }
-
-
 
 h2 {
   font-size: larger;
 }
 
 .subtitulo {
-    color: rgb(106, 252, 101) !important;
+  color: rgb(106, 252, 101) !important;
 }
 
 .tabout {
-    margin: 30px 0px;
+  margin: 30px 0px;
 }
 .texto-about {
-    font-size: small;
-    max-width: 250px;
+  font-size: small;
+  max-width: 250px;
 }
 .main-titulo {
-    margin: 100px 0px 15px 0px;
+  margin: 100px 0px 15px 0px;
 }
 .text-titulo {
-    font-size: small;
-    max-width: 250px;
-    margin: 10px 0px;
-    color: #C6D6F5;
-    font-weight: 300;
+  font-size: small;
+  max-width: 250px;
+  margin: 10px 0px;
+  color: #c6d6f5;
+  font-weight: 300;
 }
 
-/*** Seccion Proyectos ****/ 
+/*** Seccion Proyectos ****/
 .section-trabajos {
-    margin-top: 30px;
- 
+  margin-top: 30px;
 }
 
 .redes-personal {
-    display: flex;
-    align-items: end;
-    gap: 20px;
+      display: flex;
+  align-items: end;
+          gap: 20px;
 }
 
-
-.redes-personal-img, footer img {
-    width: 30px;
-    height: 100%;
-    filter: hue-rotate(30deg) brightness(600%);
+.redes-personal-img,
+footer img {
+   width: 30px;
+  height: 100%;
+  filter: hue-rotate(30deg) brightness(600%);
 }
-
 
 .redes-personal-img:hover {
-    transition: ease-out 0.5s;
-    transform: scale(1.3);
-    filter: contrast(40%) sepia(1) hue-rotate(190deg) saturate(1000%) ;
-    cursor: pointer;
+  transition: ease-out 0.5s;
+   transform: scale(1.3);
+      filter: contrast(40%) sepia(1) hue-rotate(190deg) saturate(1000%);
+      cursor: pointer;
 }
 
 .correo-main {
-    width: 40px !important;
+      width: 40px !important;
 }
 .github-main {
-  width: 32px;
+      width: 32px;
 }
 
-
 .div-trabajos {
-    gap: 10px;
-    margin: 20px 0px 60px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+             gap: 10px;
+          margin: 20px 0px 60px 0px;
+         display: flex;
+  flex-direction: column;
+     align-items: center;
 }
 
 .publicacion-trabajo {
-    margin: 15px 0px;
-    border: 1px solid rgb(18, 45, 85);
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #302e2e80;
+            margin: 15px 0px;
+            border: 1px solid rgb(18, 45, 85);
+           padding: 10px;
+     border-radius: 5px;
+  background-color: #302e2e80;
 }
 
 .div-img {
-    width: 300px;
-    overflow:hidden;
+     width: 300px;
+  overflow: hidden;
 }
 .img-post {
-    width: 300px;
-    height:150px;
-
+   width: 300px;
+  height: 150px;
 }
 .publicacion-contenido {
-    margin: 0px 15px 0px 15px;
+  margin: 0px 15px 0px 15px;
 }
 
-.publicacion-trabajo:hover .img-post
-{
-    filter: opacity(.7);
+.publicacion-trabajo:hover .img-post {
+  filter: opacity(0.7);
 }
 
 /*** Seccion Teconologias Conocidas ***/
 .section-tecnologias-conocidas {
-    margin-bottom: 10px;
-    width: 100%;
-    
+  margin-bottom: 10px;
+          width: 100%;
 }
 
-.section-tecnologias-conocidas h3, p {
-    color:#0A192F;
-    font-weight: 600;
+.section-tecnologias-conocidas h3,
+p {
+        color: #0a192f;
+  font-weight: 600;
 }
 
-.section-tecnologias  {
-    margin: 10px 0px;
-    background-color:  #F8F9F9;
-    padding: 20px 0px;
- 
+.section-tecnologias {
+            margin: 10px 0px;
+  background-color: #f8f9f9;
+           padding: 20px 0px;
 }
 
-.section-tecnologia{
-    display: flex;
-    gap: 10px;
+.section-tecnologia {
+  display: flex;
+      gap: 10px;
 }
-
 
 .section-tecnologias-aprender {
-    margin: 20px 0px;
-
-    background-color: #0A192F;
+            margin: 20px 0px;
+  background-color: #0a192f;
 }
 
 .section-tecnologias-aprender2 {
-  display: flex;
+          display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .titulo-tecnologias-aprender {
-    margin: 0px 0px 15px 0px;
+  margin: 0px 0px 15px 0px;
 }
-
 
 .titulo-tecnologias-conocidas {
-    margin: 10px 0px 20px 0px;
-}
-
-.grid-tecnologias {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    margin: 0 auto;
-    row-gap: 10px;
-    width: 100%;
-}
-
-@keyframes dancing {
-    75% {
-        transform:translateY(20px) skew(-2deg);
-    }
-    0%, 50%, 100% {
-        transform:translateY(2) skew(0);
-    }
-    25% {
-        transform:translateY(20px) skew(2deg);
-    }
+  margin: 10px 0px 20px 0px;
 }
 
 
-.grid-tecnologias img:hover {
-    filter: opacity(.8);
-    animation:dancing .75s ease .1s infinite;
-    
-}
-  
-.img-tecnologias {
-    width: 80px;
-}
-
-.js {
-    width: 80px;
-    margin-bottom: 10px;
-}
-.html {
-    width: 72px;
-    height: 90px;
-}
-.css {
-    width: 72px;
-    height: 90px;
-}
-
-.js {
-  
-}
-
-.git {
-    width: 120px;
-    margin-bottom: 10px;
-}
-
-.pug {
-    width: 100px;
-}
-.bootstrap {
-    height: 69px;
-    width: 80px;
-    margin-bottom: 10px;
-}
-.postgre {
-    height: 70px;
-    width: 70px;
-    margin-bottom: 10px;
-}
-
-.div100 {
-    height: 100px;
-    display: flex;
-    align-items:end;
-}
-.node {
-    width: 120px;
-}
-
-.react {
-    width: 80px;
-}
-
-.mongo {
-    width: 85px;
-}
 .docker {
-    width: 135px;
-    height: 100%;
-    margin-top: 10px;
+       width: 135px;
+      height: 100%;
+  margin-top: 10px;
 }
 .typescript {
-    width: 100px;
-    height: 100%;
-    margin-top: 10px;
+       width: 100px;
+      height: 100%;
+  margin-top: 10px;
 }
 
 .section-especial {
-    
 }
-
 
 .tailwind {
-    width: 100px;
+  width: 100px;
 }
 
-.span-tailwind{
-    margin-top: 16px;
+.span-tailwind {
+  margin-top: 16px;
 }
 
 .next {
-    width: 200px;
-    filter: brightness(0) invert(1) !important; /* Brightness esta de mas xq volveria la img negra */
+   width: 200px;
+  filter: brightness(0) invert(1) !important; /* Brightness esta de mas xq volveria la img negra */
 }
 
-
 .section {
-    gap: 40px;
-    align-items: center;
+          gap: 40px;
+  align-items: center;
 }
 
 .section-tecnologias-aprender2 {
-    gap: 20px;
+  gap: 20px;
 }
 
 .tecnologias-utilizadas {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    margin: 10px 0px 0px 0px;
+          display: flex;
+  justify-content: flex-end;
+              gap: 10px;
+           margin: 10px 0px 0px 0px;
 }
 
 .mensaje-error {
-    height: 30px;
+  height: 30px;
 }
 
-.contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #bdbfc2;
-    padding-bottom: 10px;
-  }
 
-  .contacto input, textarea {
-    color: black;
-    font-size: medium;
-    width: 100%;
-    padding: 8px;
-  }
-
-  .formulario-contacto li {
-    margin: 10px 0px;
-  }
-
-  .formulario-contacto input, textarea {
-    margin-top: 10px;
-
-  }
-
- .btn-contacto {
-    padding: 8px;
-    color: #565757;
-    font-weight: 550;
-    cursor: pointer;
-    font-size: medium;
- }
-
- .redes-personal  {
-   align-items: center;
-   font-size: smaller;
-   flex-wrap: wrap;
+.redes-personal {
+  align-items: center;
+    font-size: smaller;
+    flex-wrap: wrap;
 }
 
 .span-correo {
     font-size: medium;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+      display: flex;
+  align-items: center;
+          gap: 10px;
 }
 
+.linkedin-main:hover {
+  filter: contrast(40%) sepia(1) hue-rotate(190deg) saturate(1000%) !important;
+}
 
- .linkedin-main:hover {
-    filter: contrast(40%) sepia(1) hue-rotate(190deg) saturate(1000%) !important;
- }
-
- .github-main:hover {
-
- }
+.github-main:hover {
+}
 
 footer {
-    padding: 20px 0px 30px 0px;
+  padding: 20px 0px 30px 0px;
 }
 
 .mensaje-enviado {
-    color: #082042;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #0599ee;
-    display: flex;
-    align-items: center;
-
+             color: #082042;
+            margin: 10px;
+           padding: 20px;
+     border-radius: 5px;
+  background-color: #0599ee;
+           display: flex;
+       align-items: center;
 }
 
 @media (min-width: 900px) {
-    .div-img {
-        width: 400px;
-        overflow:hidden;
-    }
-    .img-post {
-        width: 400px;
-        height:200px;
-    
-    }
+  .div-img {
+    width: 400px;
+    overflow: hidden;
+  }
+  .img-post {
+    width: 400px;
+    height: 200px;
+  }
 }
 
 @media (min-width: 800px) {
-    h1 {
-        font-size: 7vw;
-    }
-    h2 {
-        font-size: 4vw;
-    }
-    .text-titulo {
-        max-width: 450px;
-        font-size: medium;
-    }
-    .main-titulo {
-        position: relative;
-        bottom: -100px;
-    }
-    .section-about{
-        position: relative;
-        bottom: -300px;
-    }
-    .texto-about {
-        font-size: medium; 
-        max-width: 450px;
-    }
-    .sobre-mi {
-        position: relative;
-        bottom: -300px;
-    }
-    .publicacion-trabajo {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        width: 90%;
-    }
-   
-    .section-trabajos {
-        margin-top: 60px;
-        position: relative;
-        bottom: -300px;
-    }
+  h1 {
+    font-size: 7vw;
+  }
+  h2 {
+    font-size: 4vw;
+  }
+  .text-titulo {
+    max-width: 450px;
+    font-size: medium;
+  }
+  .main-titulo {
+    position: relative;
+      bottom: -100px;
+  }
+  .section-about {
+    position: relative;
+      bottom: -300px;
+  }
+  .texto-about {
+    font-size: medium;
+    max-width: 450px;
+  }
+  .sobre-mi {
+    position: relative;
+      bottom: -300px;
+  }
+  .publicacion-trabajo {
+                  display: grid;
+    grid-template-columns: 1fr 3fr;
+                    width: 90%;
+  }
 
-    .section-tecnologias-conocidas {
-        position: relative;
+  .section-trabajos {
+    margin-top: 60px;
+      position: relative;
         bottom: -300px;
-    }
+  }
 
-    .grid-tecnologias {
-        width: 50%;
-    }
+  .section-tecnologias-conocidas {
+    position: relative;
+      bottom: -300px;
+  }
 
-    .section-tecnologias-aprender {
-        position: relative;
-        bottom: -300px;
-        padding: 20px 0px;
-    }
-    .contacto {
-        position: relative;
-        bottom: -300px;
-        padding: 20px 0px;
-        margin: 20px;
+  .grid-tecnologias {
+    width: 50%;
+  }
 
-       
-    }
-    footer {
-        position: relative;
-        bottom: -320px;
-    
-    }
+  .section-tecnologias-aprender {
+    position: relative;
+      bottom: -300px;
+     padding: 20px 0px;
+  }
+  .contacto {
+    position: relative;
+      bottom: -300px;
+     padding: 20px 0px;
+      margin: 20px;
+  }
+  footer {
+    position: relative;
+      bottom: -320px;
+  }
 }
-
-  

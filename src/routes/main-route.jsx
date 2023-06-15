@@ -1,4 +1,16 @@
 
+import { Context } from "../context/context"
+import Publicacion from "../Components/Publicacion/Publicacion"
+import { Fade } from "react-awesome-reveal";
+import Contact from "../Components/Contact/Contact"
+import { useContext, useState } from "react"
+import { cuartoProyectoEng, cuartoProyectoEsp, primerProyectoEng, primerProyectoEsp, segundoProyectoEng, segundoProyectoEsp, tercerProyectoEng, tercerProyectoEsp } from "../helpers/idioma"
+import Tecnologia from "../Components/Tecnologia/Tecnologia";
+
+
+import Js from "../assets/javascript.png"
+import Css from "../assets/css.svg"
+import Html from "../assets/html.svg"
 import Git from "../assets/git.svg"
 import GitHub from "../assets/github.png"
 import React from "../assets/react.png"
@@ -11,22 +23,12 @@ import Bootstrap from "../assets/bootstrap.svg"
 import Tailwind from "../assets/tailwind.svg"
 import Typescript from "../assets/typescript.png"
 import Docker from "../assets/docker.webp"
-import Js from "../assets/js.png"
-import Css from "../assets/css.svg"
-import Html from "../assets/html.svg"
 import Next from "../assets/next.svg"
 import Linkedin from "../assets/in.png"
 import Correo from "../assets/correo.png"
-import { Context } from "../context/context"
-import Publicacion from "../Components/Publicacion/Publicacion"
-import { Fade } from "react-awesome-reveal";
-import Contact from "../Components/Contact/Contact"
-import { useContext, useState } from "react"
-import { cuartoProyectoEng, cuartoProyectoEsp, primerProyectoEng, primerProyectoEsp, segundoProyectoEng, segundoProyectoEsp, tercerProyectoEng, tercerProyectoEsp } from "../helpers/idioma"
 
 const App = ()=> {
-  const { cambiarLenguaje, english } = useContext(Context)
-
+  const { english } = useContext(Context)
 
   return (
     <div className="App">
@@ -122,91 +124,14 @@ const App = ()=> {
           <article className="section-tecnologias">
           <h3 className="flex-center titulo-tecnologias-conocidas"> Teconologias Conocidas</h3>
             
-              <section className="grid-tecnologias">
-                <div className="text-center">
-                  <div className="div100">
-                    <img src={Html} alt="imagen del logo de html" className="img-tecnologias html"/>
-                  </div>
-                  <p> HTML </p>
-                </div>
-                <div className="text-center">
-                  <div className="div100">
-                    <img src={Css} alt="imagen del logo de css" className="img-tecnologias css"/>
-                  </div>
-                  <p> CSS </p>
-                </div>
-                <div className="text-center">
-                  <div className="div100">
-                    <img src={Js} alt="imagen del logo de javascript" className="img-tecnologias js"/>
-                  </div>
-                  <p> JavaScript </p>
-                </div>
-              </section>
+            <Tecnologia tecnologia1={"html"} tecnologia2={"css"} tecnologia3={"javascript"} />
 
-              <section className="grid-tecnologias">
-                <div className="text-center">
-                  <div className="div100">
-                    <img src={Vite} alt="imagen del logo de vite"  className="img-tecnologias  vite"/>
-                  </div>
-                  <p> Vite </p>
-                  </div>
-                <div className="text-center">
-                  <div className="div100">
-                  <img src={GitHub} alt="imagen del logo de github"  className="img-tecnologias github"/>
-                  </div>
-                  <p>Github</p>
-                </div>
+            <Tecnologia tecnologia1={"vite"} tecnologia2={"github"} tecnologia3={"pug"} />
 
-                <div className="text-center">
-                  <img src={Pug} alt="imagen del logo de pug js" className="img-tecnologias pug"/>
-                  <p>Pug JS</p>
-                </div>
-              </section>
+            <Tecnologia tecnologia1={"git"} tecnologia2={"bootstrap"} tecnologia3={"postgre"} />
 
-              <section className="grid-tecnologias section-especial">
-                <div className="text-center">
-                  <div className="div100">
-                    <img src={Git} alt="imagen del logo de git" className="img-tecnologias git"/>
-                  </div>
-                  <p>Git</p>
-                  </div>
-                <div className="text-center">
-                  <div className="div100">
-                    <img src={Bootstrap} alt="imagen del logo de boostrap" className="img-tecnologias bootstrap"/>
-                  </div>
-                  <p>Bootstrap</p>
-                </div>
-                <div className="text-center">
-                  <div className="div100">
-                  <img src={Postgre} alt="imagen del logo de postgres sql" className="img-tecnologias postgre"/>
-                  </div>
-                  <p>PostgreSQL</p>
-                </div>
-              </section>
-
-              <section className="grid-tecnologias">
-                <div className="text-center"> 
-                  <div className="div100">
-                    <img src={Node} alt="imagen del logo de node js" className="img-tecnologias node"/>
-                  </div>
-                  <p>Node JS</p>
-                </div>
-                <div className="text-center"> 
-                  <div className="div100">
-                    <img src={React} alt="imagen del logo de react js" className="img-tecnologias react"/>
-                  </div>
-                <p>React JS</p>
-                </div>
-                <div className="text-center">
-                  <div className="div100">
-                    <img src={Mongo} alt="imagen del logo de mongo db"  className="img-tecnologias mongo"/>
-                  </div> 
-                  <p> Mongo DB </p>
-                </div>
-              </section>
- 
-  
-            
+            <Tecnologia tecnologia1={"node"} tecnologia2={"react"} tecnologia3={"mongo"} />
+             
           </article>
         </section>
         
@@ -224,7 +149,7 @@ const App = ()=> {
         
       </section>
 
-      <Contact> </Contact>
+      <Contact />
 
       <footer>
         <div className="container flex-around">

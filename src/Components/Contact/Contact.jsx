@@ -1,14 +1,13 @@
 import { useContext, useState } from "react"
 import { Context } from "../../context/context"
 import { message } from "../../helpers/funciones"
+import "./Contact.css"
 
 const Contact = () => {
     const [state, setState] = useState({nombre: "", correo: "", mensaje: ""})
     const [enviado, setEnviado] = useState(false)
     
     const {urlBackend, message, mensaje} = useContext(Context)
-
-    console.log(mensaje)
 
     const sendMensaje = async () => {
         const settings = { 

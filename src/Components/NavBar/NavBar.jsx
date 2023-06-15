@@ -9,8 +9,8 @@ import { Link } from 'react-scroll'
 
 const NavBar = () => {
     const { cambiarLenguaje, english } = useContext(Context)
-    console.log(english)
     let chau = "</>"
+    
     return (
         <>
         <nav className="flex-between">
