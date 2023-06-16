@@ -4,7 +4,7 @@ import "./Tecnologia.css"
 
 const Tecnologia = ({tecnologia1, tecnologia2, tecnologia3}) => {
     const {objetosImages } = useContext(Context)
-    let arrayMostar = []
+    let tecnologiasMostar = []
 
     for (var key in objetosImages) {
         if(key === tecnologia1 || key === tecnologia2 || key === tecnologia3) {
@@ -12,17 +12,17 @@ const Tecnologia = ({tecnologia1, tecnologia2, tecnologia3}) => {
             if(key === "postgre") extension = "SQL"
             if(key === "mongo") extension = "DB"
             
-            arrayMostar.push([key, objetosImages[key],  extension])
+            tecnologiasMostar.push([key, objetosImages[key],  extension])
         }
       }
 
-      console.log(arrayMostar)
+      console.log(tecnologiasMostar)
 
     return (
         <>
             <section className="grid-tecnologias">
                 {
-                    arrayMostar.map((element, key) => {
+                    tecnologiasMostar.map((element, key) => {
                         return (
                             <article className="text-center" key={key}>
                                 <div className="div100">

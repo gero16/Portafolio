@@ -37,7 +37,7 @@ const Contact = () => {
 
     return (
         <main className="container">
-            <div className="contacto flex-column" id="contact">
+            <div className="contacto flex-column" >
                 <h2> Contacto </h2>
                 {
                     enviado === true && mensaje === "Mensaje enviado correctamente!"

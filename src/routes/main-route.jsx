@@ -7,18 +7,9 @@ import { useContext, useState } from "react"
 import { cuartoProyectoEng, cuartoProyectoEsp, primerProyectoEng, primerProyectoEsp, segundoProyectoEng, segundoProyectoEsp, tercerProyectoEng, tercerProyectoEsp } from "../helpers/idioma"
 import Tecnologia from "../Components/Tecnologia/Tecnologia";
 
-
-import Js from "../assets/javascript.png"
-import Css from "../assets/css.svg"
-import Html from "../assets/html.svg"
-import Git from "../assets/git.svg"
 import GitHub from "../assets/github.png"
 import React from "../assets/react.png"
-import Node from "../assets/node.png"
-import Mongo from "../assets/mongo.svg"
-import Postgre from "../assets/postgre.svg"
-import Pug from "../assets/pug.png"
-import Vite from "../assets/vite.png"
+
 import Bootstrap from "../assets/bootstrap.svg"
 import Tailwind from "../assets/tailwind.svg"
 import Typescript from "../assets/typescript.png"
@@ -38,11 +29,16 @@ const App = ()=> {
         <main className="main-titulo" id="main" > 
           <Fade cascade >
             <h1> Gerónimo Nicola </h1>
-            <h2 className="subtitulo"> Full Stack Web Developer </h2>
+            <h2 className="subtitulo"> Full Stack Developer </h2>
 
             <p className="text-titulo">
-            Full Stack Web Developer Junior apasionado por el desarrollo web, 
-              residente en Montevideo, Uruguay. 
+
+              {
+                english 
+                  ? "Full Stack Developer jr pasionated for the development, resident in Montevideo, Uruguay"
+                  : "Full Stack Developer jr apasionado por el desarrollo web, residente en Montevideo, Uruguay." 
+              }
+           
             </p>
 
             <span className="redes-personal">
@@ -71,8 +67,6 @@ const App = ()=> {
             
           </Fade>
         </main>
-
-       
       </div>
 
       <section className="section-trabajos" id="projects">
@@ -104,7 +98,7 @@ const App = ()=> {
                   contenido={english ? tercerProyectoEng : tercerProyectoEsp}
                   github={"https://github.com/reginamaite/proyecto-final-frontend"}
                   web={"No hay"}
-                  tecnologias={["React Js", "Node Js"]}
+                  tecnologias={["React Js", "Node Js", "Postgre SQL"]}
                   cover={true}
                 />
 
@@ -149,7 +143,9 @@ const App = ()=> {
         
       </section>
 
-      <Contact />
+      <section className="contact">
+        <Contact />
+      </section>
 
       <footer>
         <div className="container flex-around">

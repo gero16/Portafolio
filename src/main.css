@@ -56,8 +56,8 @@ a {
 }
 
 .container {
-   width: 80%;
-  margin: 0 auto;
+    width: 80%;
+   margin: 0 auto;
 }
 
 h2 {
@@ -299,7 +299,7 @@ footer {
   }
   .main-titulo {
     position: relative;
-      bottom: -100px;
+    bottom: -150px;
   }
   .section-about {
     position: relative;
