@@ -41,7 +41,6 @@ export const CustomProvider = ({ children }) => {
         "github": github,
         "pug" : pug,
         "git" : git,
-        "node": node,
         "bootstrap": bootstrap,
         "postgre": postgre,
         "node": node,

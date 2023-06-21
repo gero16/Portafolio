@@ -8,6 +8,7 @@ import ErrorPage from "./routes/errorPage-route"
 import { CustomProvider } from './context/context';
 import Layout from './Components/Layout/Layout';
 import Contact from './Components/Contact/Contact';
+import VideoPitch from './Components/VideoPitch/VideoPitch';
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element:  <Contact/>,
+      },
+      {
+        path: "/presentacion",
+        element:  <VideoPitch />,
       },
       
     ],
