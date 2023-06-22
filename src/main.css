@@ -60,6 +60,7 @@ a {
    margin: 0 auto;
 }
 
+h1 
 h2 {
   font-size: larger;
 }
@@ -248,7 +249,7 @@ p {
 }
 
 .span-correo {
-    font-size: medium;
+    font-size: small;
       display: flex;
   align-items: center;
           gap: 10px;
@@ -276,6 +277,12 @@ footer {
 }
 
 @media (min-width: 900px) {
+  h1 {
+    font-size: 6vw;
+  }
+  h2 {
+    font-size: 3.5vw;
+  }
   .div-img {
     width: 400px;
     overflow: hidden;
@@ -288,10 +295,13 @@ footer {
 
 @media (min-width: 800px) {
   h1 {
-    font-size: 7vw;
+    font-size: 6vw;
   }
   h2 {
     font-size: 4vw;
+  }
+  .span-correo {
+    font-size: medium;
   }
   .text-titulo {
     max-width: 450px;

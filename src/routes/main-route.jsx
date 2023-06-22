@@ -9,8 +9,6 @@ import Tecnologia from "../Components/Tecnologia/Tecnologia";
 
 import GitHub from "../assets/github.png"
 import React from "../assets/react.png"
-
-import Bootstrap from "../assets/bootstrap.svg"
 import Tailwind from "../assets/tailwind.svg"
 import Typescript from "../assets/typescript.png"
 import Docker from "../assets/docker.webp"
