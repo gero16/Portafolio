@@ -83,7 +83,7 @@ const App = ()=> {
 
                 <Publicacion 
                   titulo={"Blog para Cliente"} 
-                  img="https://res.cloudinary.com/geronicola/image/upload/v1686257613/akk1tisxhetebhc8lzao.png"
+                  img="https://res.cloudinary.com/geronicola/image/upload/v1687548885/wm4qbdqze2cxjvkdv9pn.jpg"
                   contenido={english ? segundoProyectoEng : segundoProyectoEsp}
                   github={"https://github.com/gero16/blog"}
                   web={"https://www.luzdeluna.blog/"}
