@@ -118,11 +118,11 @@ const App = ()=> {
             
             <Tecnologia tecnologia1={"html"} tecnologia2={"css"} tecnologia3={"javascript"} />
 
-            <Tecnologia tecnologia1={"vite"} tecnologia2={"github"} tecnologia3={"pug"} />
+            <Tecnologia tecnologia1={"react"} tecnologia2={"node"} tecnologia3={"pug"} />
 
-            <Tecnologia tecnologia1={"git"} tecnologia2={"bootstrap"} tecnologia3={"postgre"} />
+            <Tecnologia tecnologia1={"github"} tecnologia2={"git"} tecnologia3={"bootstrap"} />
 
-            <Tecnologia tecnologia1={"node"} tecnologia2={"react"} tecnologia3={"mongo"} />
+            <Tecnologia tecnologia1={"postgre"} tecnologia2={"vite"} tecnologia3={"mongo"} />
              
           </article>
         </section>

@@ -2,7 +2,7 @@ import { useState, createContext } from "react"
 import html from "../assets/html.svg"
 import css from "../assets/css.svg"
 import javascript from "../assets/javascript.png"
-import git from "../assets/git.svg"
+import git from "../assets/git.png"
 import github from "../assets/github.png"
 import react from "../assets/react.png"
 import node from "../assets/node.png"
@@ -37,14 +37,14 @@ export const CustomProvider = ({ children }) => {
         "html": html,
         "css": css,
         "javascript": javascript,
-        "vite": vite,
-        "github": github,
-        "pug" : pug,
-        "git" : git,
-        "bootstrap": bootstrap,
-        "postgre": postgre,
-        "node": node,
         "react": react,
+        "node": node,
+        "pug" : pug,
+        "github": github,
+        "bootstrap": bootstrap,
+        "git" : git,
+        "vite": vite,
+        "postgre": postgre,
         "mongo": mongo
     }
     

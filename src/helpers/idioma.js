@@ -8,5 +8,5 @@ export const segundoProyectoEng = ""
 export const tercerProyectoEsp = "Proyecto final grupal del Bootcamp de Senpai Academy. Se utilizo React JS en front end y Node js para el backend. Cuenta con un sistema de login y se pueden agregar nuevos pokemons tanto como comprar"
 export const tercerProyectoEng = "Final project on Senpai Academy Bootcamp. We use React JS on the front end and Node JS on the back end"
 
-export const cuartoProyectoEsp = "Proyecto personal sobre una tienda virtual, integrada con mercado pago"
+export const cuartoProyectoEsp = "Proyecto personal - Tienda virtual de ropa emulando Adidas. Se utilizo Mongo DB con base de datos con la posibilidad de utilizar mercado pago como método de pago"
 export const cuartoProyectoEng = "Personal project - web shop with mercado pago"

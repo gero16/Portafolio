@@ -4,16 +4,16 @@ import Url from "../../assets/url.png"
 import { Context } from "../../context/context"
 import "./Publicacion.css"
 
-const Publicacion = ({titulo, img, contenido, github, web, tecnologias, cover}) => {
+const Publicacion = ({titulo, img, contenido, github, web, tecnologias, cover, scale}) => {
     const { english } = useContext(Context)
 
     const style = {
         backgroundImage: `url(${img})`,
         backgroundSize: !cover ? "contain" : "cover",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "50%"
-
+        backgroundPosition: "50%",
     }
+    
     return (
         <article className="publicacion-trabajo">
             <div className="div-img">

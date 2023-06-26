@@ -2,7 +2,12 @@ import { useContext } from "react"
 import { Context } from "../../context/context"
 import "./Tecnologia.css"
 
+const style = {
+    backgroundPosition: "50%",
+}
+
 const Tecnologia = ({tecnologia1, tecnologia2, tecnologia3}) => {
+    console.log(tecnologia1)
     const {objetosImages } = useContext(Context)
     let tecnologiasMostar = []
 
@@ -24,7 +29,7 @@ const Tecnologia = ({tecnologia1, tecnologia2, tecnologia3}) => {
                 {
                     tecnologiasMostar.map((element, key) => {
                         return (
-                            <article className="text-center" key={key}>
+                            <article className={"text-center div-tecnologia " + `article-${element[0]}`} key={key} >
                                 <div className="div100">
                                     <img 
                                         src={element[1]} 

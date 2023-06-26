@@ -155,7 +155,7 @@ footer img {
 .img-post {
    width: 300px;
   height: 150px;
-  transition: ease-out 0.5s;
+  
 }
 
 .img-post:hover {
@@ -254,6 +254,8 @@ p {
               gap: 10px;
            margin: 10px 0px 0px 0px;
 }
+
+
 
 .mensaje-error {
   height: 30px;
