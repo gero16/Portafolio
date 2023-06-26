@@ -135,25 +135,37 @@ footer img {
             border: 1px solid rgb(18, 45, 85);
            padding: 10px;
      border-radius: 5px;
-  background-color: #302e2e80;
+  background-color: #0D2242;
+        transition: ease-out 0.5s;
+            filter: opacity(0.8);
+
+}
+
+.publicacion-trabajo:hover{
+  transition: ease-out 0.5s;
+  filter: opacity(1);
+ 
 }
 
 .div-img {
      width: 300px;
   overflow: hidden;
+  border-radius: 5px;
 }
 .img-post {
    width: 300px;
   height: 150px;
+  transition: ease-out 0.5s;
 }
+
+.img-post:hover {
+  transition: ease-out 0.5s;
+  transform: scale(1.2);
+}
+
 .publicacion-contenido {
   margin: 0px 15px 0px 15px;
 }
-
-.publicacion-trabajo:hover .img-post {
-  filter: opacity(0.7);
-}
-
 /*** Seccion Teconologias Conocidas ***/
 .section-tecnologias-conocidas {
   margin-bottom: 10px;

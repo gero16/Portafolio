@@ -17,9 +17,7 @@ const Publicacion = ({titulo, img, contenido, github, web, tecnologias, cover}) 
     return (
         <article className="publicacion-trabajo">
             <div className="div-img">
-                <div className="img-post" style={style}>
-
-                </div>
+                <img src={img} className="img-post"/>
                
             </div>
 
