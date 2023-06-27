@@ -105,7 +105,7 @@ const App = ()=> {
                   
                 <Publicacion 
                     titulo={"Pokedex - Proyecto Final"} 
-                    img="https://res.cloudinary.com/geronicola/image/upload/v1686252165/qjleughaubj3m87uqufv.jpg"
+                    img="https://res.cloudinary.com/geronicola/image/upload/v1685729177/ulde9uhsbid4hdsv8tsg.jpg"
                     contenido={english ? tercerProyectoEng : tercerProyectoEsp}
                     github={"https://github.com/reginamaite/proyecto-final-frontend"}
                     web={"No hay"}

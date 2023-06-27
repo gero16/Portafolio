@@ -1,36 +1,34 @@
 
 .publicacion-trabajo {
-    margin: 15px 0px;
-    border: 1px solid rgb(18, 45, 85);
-   padding: 10px;
-border-radius: 5px;
+          margin: 15px 0px;
+          border: 1px solid rgb(18, 45, 85);
+         padding: 10px;
+   border-radius: 5px;
 background-color: #0D2242;
-transition: ease-out 0.5s;
-    filter: opacity(0.7);
-
+      transition: ease-out 0.5s;
+          filter: opacity(0.7);
+    
 }
 
 .publicacion-trabajo:hover{
-transition: ease-out 0.5s;
-filter: opacity(1);
+    transition: ease-out 0.5s;
+    filter: opacity(1);
 
 }
 
 .div-img {
-width: 300px;
-overflow: hidden;
-border-radius: 5px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 5px;
 }
 .img-post {
-width: 300px;
-height: 150px;
-
+    width: 300px;
+    height: 150px;
+    transition: ease-out 0.5s;
 }
 
-
-
 .publicacion-contenido {
-margin: 0px 15px 0px 15px;
+    margin: 0px 15px 0px 15px;
 }
 
 .header-publicacion {
@@ -53,9 +51,7 @@ margin: 0px 15px 0px 15px;
     width: 30px;
     height: 30px;
 }
-.contenido-proyecto {
 
-}
 .tecnologias-utilizadas span {
     border: 1px solid rgb(212, 210, 205);
     border-radius: 10px;
@@ -92,7 +88,7 @@ margin: 0px 15px 0px 15px;
 
 .tienda-vanilla:hover {
     transition: ease-out 0.5s;
-    transform: scale(1.4) translate(0%, -3%);
+    transform: scale(1.4) translate(0%, -6%);
 }
 
 @media (min-width: 920px) { 

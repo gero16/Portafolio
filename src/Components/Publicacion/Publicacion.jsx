@@ -18,7 +18,6 @@ const Publicacion = ({titulo, img, contenido, github, web, tecnologias, cover, h
         <article className="publicacion-trabajo">
             <div className="div-img">
                 <img src={img} className={"img-post " + hover}/>
-               
             </div>
 
             <div className="publicacion-contenido">
@@ -27,11 +26,9 @@ const Publicacion = ({titulo, img, contenido, github, web, tecnologias, cover, h
                     <span className="div-iconos">
                         <a href={github} title={github}>
                             <img src={GitHub} alt=""  className="github-publicacion hipervinculos-proyecto"/>
-
                         </a>
                         <a href={web} title={web}>
                             <img src={Url} alt=""  className="url hipervinculos-proyecto"/>
-
                         </a>
                     </span>
                 </header>
