@@ -12,6 +12,12 @@ import pug from "../assets/pug.png"
 import vite from "../assets/vite.png"
 import bootstrap from "../assets/bootstrap.svg"
 
+import Tailwind from "../assets/tailwind.svg"
+import Typescript from "../assets/typescript.png"
+import Docker from "../assets/docker.webp"
+import Next from "../assets/next.svg"
+
+
 export const Context = createContext()
 
 export const CustomProvider = ({ children }) => {
@@ -29,7 +35,7 @@ export const CustomProvider = ({ children }) => {
         setMensaje(msj)
         setTimeout(() => {
             setMensaje("")
-            }, 6000)
+            }, 5000)
         return mensaje
     }
 
@@ -50,7 +56,7 @@ export const CustomProvider = ({ children }) => {
     
     return (
         <Context.Provider 
-            value={{cambiarLenguaje, english, urlBackend, message, mensaje, objetosImages}}> 
+            value={{cambiarLenguaje, english, urlBackend, message, mensaje, objetosImages, Tailwind, Next, Docker, Typescript}}> 
             { children } 
         </Context.Provider>
     )

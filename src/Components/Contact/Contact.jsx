@@ -17,10 +17,10 @@ const Contact = () => {
         };
         try {
             if(state.correo == "") {
-                message("Su correo no puede quedar vacio!")
+                return message("Su correo no puede quedar vacio!")
             }
             if(state.mensaje == "") {
-                message("Su mensaje no puede quedar vacio!")
+                return message("Su mensaje no puede quedar vacio!")
             }
             if(state.mensaje !== "" && state.correo !== "") {
                 const fetchResponse = await fetch(urlBackend, settings);
@@ -38,7 +38,7 @@ const Contact = () => {
     return (
         <main className="container">
             <div className="contacto flex-column" >
-                <h2> Contacto </h2>
+                <h2 className="contacto-titulo"> Contacto </h2>
                 {
                     enviado === true && mensaje === "Mensaje enviado correctamente!"
                         ? <>

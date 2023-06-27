@@ -1,3 +1,6 @@
+h3  {
+    font-size: x-large;
+}
 .grid-tecnologias {
     display: flex;
     flex-direction: column;

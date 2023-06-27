@@ -44,7 +44,7 @@ const NavBar = () => {
                     <Link to="tecnologias" className="flex-center-column">
                         <img src={Nave} alt="" className="icon-navbar"/>
                         <span>
-                            {english ? "Technologies" : "Tecnologias"}
+                            {english ? "Skills" : "Habilidades"}
                         </span>
                     </Link>
                     

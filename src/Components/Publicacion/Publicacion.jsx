@@ -4,7 +4,7 @@ import Url from "../../assets/url.png"
 import { Context } from "../../context/context"
 import "./Publicacion.css"
 
-const Publicacion = ({titulo, img, contenido, github, web, tecnologias, cover, scale}) => {
+const Publicacion = ({titulo, img, contenido, github, web, tecnologias, cover, hover}) => {
     const { english } = useContext(Context)
 
     const style = {
@@ -17,7 +17,7 @@ const Publicacion = ({titulo, img, contenido, github, web, tecnologias, cover, s
     return (
         <article className="publicacion-trabajo">
             <div className="div-img">
-                <img src={img} className="img-post"/>
+                <img src={img} className={"img-post " + hover}/>
                
             </div>
 

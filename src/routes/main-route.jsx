@@ -1,23 +1,34 @@
 
+import { useContext,useState } from "react"
+import { useCopyToClipboard } from 'usehooks-ts'
 import { Context } from "../context/context"
-import Publicacion from "../Components/Publicacion/Publicacion"
+
+import { cuartoProyectoEng, cuartoProyectoEsp, primerProyectoEng, primerProyectoEsp, 
+         segundoProyectoEng, segundoProyectoEsp, tercerProyectoEng, tercerProyectoEsp } 
+from "../helpers/idioma"
+
 import { Fade } from "react-awesome-reveal";
-import Contact from "../Components/Contact/Contact"
-import { useContext, useState } from "react"
-import { cuartoProyectoEng, cuartoProyectoEsp, primerProyectoEng, primerProyectoEsp, segundoProyectoEng, segundoProyectoEsp, tercerProyectoEng, tercerProyectoEsp } from "../helpers/idioma"
+
+import Publicacion from "../Components/Publicacion/Publicacion"
 import Tecnologia from "../Components/Tecnologia/Tecnologia";
+import Contact from "../Components/Contact/Contact"
 
 import GitHub from "../assets/github.png"
 import React from "../assets/react.png"
-import Tailwind from "../assets/tailwind.svg"
-import Typescript from "../assets/typescript.png"
-import Docker from "../assets/docker.webp"
-import Next from "../assets/next.svg"
 import Linkedin from "../assets/in.png"
 import Correo from "../assets/correo.png"
 
 const App = ()=> {
-  const { english } = useContext(Context)
+  const { english, Docker, Typescript, Next, Tailwind } = useContext(Context)
+
+  const [value, copy] = useCopyToClipboard()
+  const [copiado, setCopiado] = useState(false)
+
+  const copyClipboard = (texto) => {
+    copy(texto)
+    setCopiado(true)
+    setTimeout(() => setCopiado(false), 4000);
+  }
 
   return (
     <div className="App">
@@ -73,40 +84,43 @@ const App = ()=> {
               <h3> Algunos de mis Proyectos </h3>
               <div className="div-trabajos">
                 <Publicacion 
-                  titulo={"Tienda Virtual - Proyecto final"} 
-                  img="https://res.cloudinary.com/geronicola/image/upload/v1686262953/mzizyticb4ba7s4atcff.png"
-                  contenido={english ? primerProyectoEng : primerProyectoEsp}
-                  github={"https://github.com/gero16/tienda-virtual"}
-                  web={"https://tienda-virtual-lime.vercel.app/"}
-                  tecnologias={["React Js", "Firebase", "Bootstrap"]}
+                    titulo={"Blog para Cliente"} 
+                    img="https://res.cloudinary.com/geronicola/image/upload/v1687548885/wm4qbdqze2cxjvkdv9pn.jpg"
+                    contenido={english ? segundoProyectoEng : segundoProyectoEsp}
+                    github={"https://github.com/gero16/blog"}
+                    web={"https://www.luzdeluna.blog/"}
+                    tecnologias={["Javascript", "Node Js", "Pug Js", "Postgre SQL"]}
+                    hover={"blog-vanilla"}
+                />
+
+                 <Publicacion 
+                    titulo={"Tienda Virtual - Proyecto final"} 
+                    img="https://res.cloudinary.com/geronicola/image/upload/v1686262953/mzizyticb4ba7s4atcff.png"
+                    contenido={english ? primerProyectoEng : primerProyectoEsp}
+                    github={"https://github.com/gero16/tienda-virtual"}
+                    web={"https://tienda-virtual-lime.vercel.app/"}
+                    tecnologias={["React Js", "Firebase", "Bootstrap"]}
+                    hover={"tienda-react"}
                   /> 
-
+                  
                 <Publicacion 
-                  titulo={"Blog para Cliente"} 
-                  img="https://res.cloudinary.com/geronicola/image/upload/v1687548885/wm4qbdqze2cxjvkdv9pn.jpg"
-                  contenido={english ? segundoProyectoEng : segundoProyectoEsp}
-                  github={"https://github.com/gero16/blog"}
-                  web={"https://www.luzdeluna.blog/"}
-                  tecnologias={["Javascript", "Node Js", "Pug Js", "Postgre SQL"]}
+                    titulo={"Pokedex - Proyecto Final"} 
+                    img="https://res.cloudinary.com/geronicola/image/upload/v1686252165/qjleughaubj3m87uqufv.jpg"
+                    contenido={english ? tercerProyectoEng : tercerProyectoEsp}
+                    github={"https://github.com/reginamaite/proyecto-final-frontend"}
+                    web={"No hay"}
+                    tecnologias={["React Js", "Node Js", "Postgre SQL"]}
+                    cover={true}
                 />
 
                 <Publicacion 
-                  titulo={"Pokedex - Proyecto Final"} 
-                  img="https://res.cloudinary.com/geronicola/image/upload/v1686252165/qjleughaubj3m87uqufv.jpg"
-                  contenido={english ? tercerProyectoEng : tercerProyectoEsp}
-                  github={"https://github.com/reginamaite/proyecto-final-frontend"}
-                  web={"No hay"}
-                  tecnologias={["React Js", "Node Js", "Postgre SQL"]}
-                  cover={true}
-                />
-
-              <Publicacion 
                   titulo={"Tienda Virtual - Vanilla Js"} 
                   img="https://res.cloudinary.com/geronicola/image/upload/v1685731780/waz1ashegfwgnpxy0f8q.jpg"
                   contenido={english ? cuartoProyectoEng : cuartoProyectoEsp}
                   github={"https://github.com/reginamaite/proyecto-final-frontend"}
                   web={"No hay"}
                   tecnologias={["Javascript", "Mongo DB"]}
+                  hover={"tienda-vanilla"}
                 />
             </div>
           </div>
@@ -114,7 +128,7 @@ const App = ()=> {
 
       <section className="section-tecnologias-conocidas" id="tecnologias">
           <article className="section-tecnologias">
-          <h3 className="flex-center titulo-tecnologias-conocidas"> Teconologias Conocidas</h3>
+          <h3 className="flex-center titulo-tecnologias-conocidas"> Habilidades </h3>
             
             <Tecnologia tecnologia1={"html"} tecnologia2={"css"} tecnologia3={"javascript"} />
 
@@ -145,15 +159,22 @@ const App = ()=> {
         <Contact />
       </section>
 
-      <footer>
-        <div className="container flex-around">
-          <span> geronicola1696@gmail.com </span>
-          <span><img src={GitHub} alt="imagen con el icono de github" className="github-main"/>
-              </span>
-          <span> <img src={Linkedin} alt="imagen con el icono de linkedin" className="github-main"/></span>
-        </div>
+      <footer className="container flex-around">
+        <section className="div-correo">
+          <span className={`portapapeles ${ copiado ? "active" :"inactive" }`}> {copiado ? "Copiado en portapapeles!" : ""} </span>
+          <span onClick={(e) => copyClipboard(e.target.textContent)} className="correo"> geronicola1696@gmail.com </span>
+        </section>
+        <section> 
+          <img src={ GitHub } alt="imagen con el icono de github" className="github-main"/> 
+        </section>
+        <section> 
+          <img src={ Linkedin } alt="imagen con el icono de linkedin" className="github-main"/> 
+        </section>
       </footer>
+
     </div>
+
+    
 
     
   )

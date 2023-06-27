@@ -7,7 +7,6 @@ const style = {
 }
 
 const Tecnologia = ({tecnologia1, tecnologia2, tecnologia3}) => {
-    console.log(tecnologia1)
     const {objetosImages } = useContext(Context)
     let tecnologiasMostar = []
 
@@ -21,7 +20,6 @@ const Tecnologia = ({tecnologia1, tecnologia2, tecnologia3}) => {
         }
       }
 
-      console.log(tecnologiasMostar)
 
     return (
         <>
