@@ -85,8 +85,8 @@ const App = ()=> {
               <div className="div-trabajos">
                 <Publicacion 
                     titulo={"Blog para Cliente"} 
-                    img="https://res.cloudinary.com/geronicola/image/upload/v1687548885/wm4qbdqze2cxjvkdv9pn.jpg"
-                    contenido={english ? segundoProyectoEng : segundoProyectoEsp}
+                    img="https://res.cloudinary.com/geronicola/image/upload/v1687548885/wm4qbdqze2cxjvkdv9pn.jpg" 
+                    contenido={english ? primerProyectoEng : primerProyectoEsp}
                     github={"https://github.com/gero16/blog"}
                     web={"https://www.luzdeluna.blog/"}
                     tecnologias={["Javascript", "Node Js", "Pug Js", "Postgre SQL"]}
@@ -95,8 +95,8 @@ const App = ()=> {
 
                  <Publicacion 
                     titulo={"Tienda Virtual - Proyecto final"} 
-                    img="https://res.cloudinary.com/geronicola/image/upload/v1686262953/mzizyticb4ba7s4atcff.png"
-                    contenido={english ? primerProyectoEng : primerProyectoEsp}
+                    img="https://res.cloudinary.com/geronicola/image/upload/v1687994366/i8oeayq6idr3rtaliava.jpg"
+                    contenido={english ? segundoProyectoEng : segundoProyectoEsp}
                     github={"https://github.com/gero16/tienda-virtual"}
                     web={"https://tienda-virtual-lime.vercel.app/"}
                     tecnologias={["React Js", "Firebase", "Bootstrap"]}
@@ -117,7 +117,7 @@ const App = ()=> {
                   titulo={"Tienda Virtual - Vanilla Js"} 
                   img="https://res.cloudinary.com/geronicola/image/upload/v1685731780/waz1ashegfwgnpxy0f8q.jpg"
                   contenido={english ? cuartoProyectoEng : cuartoProyectoEsp}
-                  github={"https://github.com/reginamaite/proyecto-final-frontend"}
+                  github={"https://github.com/gero16/tienda-virtual-js"}
                   web={"No hay"}
                   tecnologias={["Javascript", "Mongo DB"]}
                   hover={"tienda-vanilla"}

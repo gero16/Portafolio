@@ -19,8 +19,10 @@ const NavBar = () => {
         <nav className="flex-between">
 
             <span className="logo">
-                <span> GN </span>
-                <span className="simbolo"> {chau} </span>
+                <Link to="main">
+                    <span> GN </span>
+                    <span className="simbolo"> {chau} </span>      
+                </Link>
             </span>
 
             <ul className="lista-navbar flex-center-column">
@@ -62,7 +64,7 @@ const NavBar = () => {
                     <Link to="main" className="flex-center-column">
                             <img src={Home} alt="" className="icon-navbar"/>
                             <span>
-                            {english ? "Home" : "Inicio"}
+                                {english ? "Home" : "Inicio"}
                             </span>
                     
                     </Link>

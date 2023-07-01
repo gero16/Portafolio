@@ -25,7 +25,7 @@ nav {
 }
 .logo {
   margin: 0px 20px;  
-
+  cursor: pointer;
 }
 .lista-navbar {
     display: flex;
@@ -34,13 +34,11 @@ nav {
     gap: 25px;
     font-size: smaller;
     margin-right: 15px;
-
 }
 
 .lista-navbar li {
   cursor: pointer;
 }
-
 
 .simbolo {
     font-size: medium;
@@ -51,7 +49,6 @@ nav {
 .redes-personal {
     margin: 0px 0px 10px 0px;
 }
-
 
 .img-idioma {
   width: 32px;
@@ -70,7 +67,6 @@ nav {
   }
 }
 
-
 @media (min-width: 800px) {
   .lista-navbar {
     font-size: medium;
@@ -80,6 +76,5 @@ nav {
   }
   .logo {
     font-size: xx-large;
-}
-
-}
+  }
+ }
