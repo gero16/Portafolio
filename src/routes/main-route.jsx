@@ -142,7 +142,7 @@ const App = ()=> {
         </section>
         
         <section className="section-tecnologias-aprender">
-          <h3 className="flex-center titulo-tecnologias-aprender"> Teconologias por aprender </h3>
+          <h3 className="flex-center titulo-tecnologias-aprender"> Teconologias de interés </h3>
           <section className="flex-center section-tecnologias-aprender2">
               <img src={Typescript} alt="imagen del logo de typescript" className="typescript" />
               <img src={Docker} alt="imagen del logo de docker"  className="docker"/>

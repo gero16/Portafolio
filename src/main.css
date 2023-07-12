@@ -88,7 +88,7 @@ h2 {
 .text-titulo {
   font-size: small;
   max-width: 250px;
-  margin: 10px 0px;
+  margin: 0px 0px 5px 0px;
   color: #c6d6f5;
   font-weight: 300;
 }
