@@ -78,53 +78,52 @@ const App = ()=> {
         </main>
       </div>
 
-      <section className="section-trabajos" id="projects">
-            <div className="container">
+      <section name="projects">
+        <section className="section-trabajos container">
+          <h3> Proyectos Destacados </h3>
+          <div className="div-trabajos">
+            <Publicacion 
+                titulo={"Blog para Cliente"} 
+                img="https://res.cloudinary.com/geronicola/image/upload/v1687548885/wm4qbdqze2cxjvkdv9pn.jpg" 
+                contenido={english ? primerProyectoEng : primerProyectoEsp}
+                github={"https://github.com/gero16/blog"}
+                web={"https://www.luzdeluna.blog/"}
+                tecnologias={["Javascript", "Node Js", "Pug Js", "Postgre SQL"]}
+                hover={"blog-vanilla"}
+            />
 
-              <h3> Algunos de mis Proyectos </h3>
-              <div className="div-trabajos">
-                <Publicacion 
-                    titulo={"Blog para Cliente"} 
-                    img="https://res.cloudinary.com/geronicola/image/upload/v1687548885/wm4qbdqze2cxjvkdv9pn.jpg" 
-                    contenido={english ? primerProyectoEng : primerProyectoEsp}
-                    github={"https://github.com/gero16/blog"}
-                    web={"https://www.luzdeluna.blog/"}
-                    tecnologias={["Javascript", "Node Js", "Pug Js", "Postgre SQL"]}
-                    hover={"blog-vanilla"}
-                />
+            <Publicacion 
+              titulo={"Tienda Virtual - Proyecto final"} 
+              img="https://res.cloudinary.com/geronicola/image/upload/v1687994366/i8oeayq6idr3rtaliava.jpg"
+              contenido={english ? segundoProyectoEng : segundoProyectoEsp}
+              github={"https://github.com/gero16/tienda-virtual"}
+              web={"https://tienda-virtual-lime.vercel.app/"}
+              tecnologias={["React Js", "Firebase", "Bootstrap"]}
+              hover={"tienda-react"}
+            /> 
+              
+            <Publicacion 
+                titulo={"Pokedex - Proyecto Final"} 
+                img="https://res.cloudinary.com/geronicola/image/upload/v1685729177/ulde9uhsbid4hdsv8tsg.jpg"
+                contenido={english ? tercerProyectoEng : tercerProyectoEsp}
+                github={"https://github.com/reginamaite/proyecto-final-frontend"}
+                web={"No hay"}
+                tecnologias={["React Js", "Node Js", "Postgre SQL"]}
+                cover={true}
+            />
 
-                 <Publicacion 
-                    titulo={"Tienda Virtual - Proyecto final"} 
-                    img="https://res.cloudinary.com/geronicola/image/upload/v1687994366/i8oeayq6idr3rtaliava.jpg"
-                    contenido={english ? segundoProyectoEng : segundoProyectoEsp}
-                    github={"https://github.com/gero16/tienda-virtual"}
-                    web={"https://tienda-virtual-lime.vercel.app/"}
-                    tecnologias={["React Js", "Firebase", "Bootstrap"]}
-                    hover={"tienda-react"}
-                  /> 
-                  
-                <Publicacion 
-                    titulo={"Pokedex - Proyecto Final"} 
-                    img="https://res.cloudinary.com/geronicola/image/upload/v1685729177/ulde9uhsbid4hdsv8tsg.jpg"
-                    contenido={english ? tercerProyectoEng : tercerProyectoEsp}
-                    github={"https://github.com/reginamaite/proyecto-final-frontend"}
-                    web={"No hay"}
-                    tecnologias={["React Js", "Node Js", "Postgre SQL"]}
-                    cover={true}
-                />
-
-                <Publicacion 
-                  titulo={"Tienda Virtual - Vanilla Js"} 
-                  img="https://res.cloudinary.com/geronicola/image/upload/v1685731780/waz1ashegfwgnpxy0f8q.jpg"
-                  contenido={english ? cuartoProyectoEng : cuartoProyectoEsp}
-                  github={"https://github.com/gero16/tienda-virtual-js"}
-                  web={"No hay"}
-                  tecnologias={["Javascript", "Mongo DB"]}
-                  hover={"tienda-vanilla"}
-                />
-            </div>
+            <Publicacion 
+              titulo={"Tienda Virtual - Vanilla Js"} 
+              img="https://res.cloudinary.com/geronicola/image/upload/v1685731780/waz1ashegfwgnpxy0f8q.jpg"
+              contenido={english ? cuartoProyectoEng : cuartoProyectoEsp}
+              github={"https://github.com/gero16/tienda-virtual-js"}
+              web={"No hay"}
+              tecnologias={["Javascript", "Mongo DB"]}
+              hover={"tienda-vanilla"}
+              />
           </div>
         </section>
+      </section>
 
       <section className="section-tecnologias-conocidas" id="tecnologias">
           <article className="section-tecnologias">
