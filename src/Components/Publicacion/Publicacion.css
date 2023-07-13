@@ -76,9 +76,11 @@ background-color: #0D2242;
 }
 
 .publicacion-trabajo:hover .titulo-publicacion-trabajo{
-    
     color: rgb(106, 252, 101);
 }
+.publicacion-trabajo:hover .span-tecnologia {
+}
+
 .img-post:hover {
     transition: ease-out 0.5s;
     transform: scale(1.2);

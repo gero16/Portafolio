@@ -45,7 +45,7 @@ const Publicacion = ({titulo, img, contenido, github, web, tecnologias, cover, h
                             {
                                 {}
                             }
-                            return <span key={index}> {tecnologia }</span>
+                            return <span className="span-tecnologia" key={index}> {tecnologia }</span>
                         })
                     }
                 

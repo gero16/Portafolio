@@ -34,7 +34,7 @@ const NavBar = () => {
                         title={english ? "Cambiar a Español" : "Change to English"}
                         onClick={() => cambiarLenguaje()}/>
                 </li>
-                <li className="p-2 especial">
+                <li className="p-2 especial li-nav">
                     <Link to="contact" className="flex-center-column">
                         <img src={Contact} alt="" className="icon-navbar"/>
                         <span>
@@ -42,7 +42,7 @@ const NavBar = () => {
                         </span>
                     </Link>
                 </li>
-                <li className="p-2">
+                <li className="p-2 li-nav">
                     <Link to="tecnologias" className="flex-center-column">
                         <img src={Nave} alt="" className="icon-navbar"/>
                         <span>
@@ -51,7 +51,7 @@ const NavBar = () => {
                     </Link>
                     
                 </li>
-                <li className="p-2">
+                <li className="p-2 li-nav">
                     <Link to="projects" className="flex-center-column">
                          <img src={Projects} alt="" className="icon-navbar"/>
                         <span>
@@ -60,13 +60,13 @@ const NavBar = () => {
                     </Link>
                     
                 </li>
-                <li className="p-2">
-                    <Link to="main" className="flex-center-column">
+                <li className="p-2 li-nav">
+                    <Link to="main" className="flex-center-column a">
                             <img src={Home} alt="" className="icon-navbar"/>
                             <span>
                                 {english ? "Home" : "Inicio"}
                             </span>
-                    
+                          
                     </Link>
                 </li>
                 
